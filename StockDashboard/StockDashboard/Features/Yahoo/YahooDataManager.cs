@@ -7,5 +7,9 @@ namespace StockDashboard.Features.Yahoo
 {
     public class YahooDataManager
     {
+        public YahooDataManager()
+        {
+
+        }
     }
 }
