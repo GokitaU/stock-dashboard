@@ -40,6 +40,24 @@ namespace StockDashboard.Features.Connections
             return stockSymbols;
         }
 
+        public async Task<List<RootSymbolIndex>> StocksToUpdate(DateTime availableDate)
+        {
+            var parameters = new DynamicParameters();
+            parameters.Add("@AvailableDate", availableDate);
+            List<RootSymbolIndex> stockSymbols;
+            var sqlQuery = @"SELECT RSI.* FROM RootSymbolIndex RSI, DailyProcess DP 
+                              WHERE DP.SymbolId = RSI.Id 
+                                AND CONVERT(DATE,MAX(DP.LastestDate)) < CONVERT(DATE, @AvailableDate) 
+                           ORDER BY RSI.Id";
+            using (IDbConnection cn = Connection)
+            {
+                cn.Open();
+                var result = await cn.QueryAsync<RootSymbolIndex>(sqlQuery);
+                cn.Close();
+                stockSymbols = result.ToList();
+            }
+            return stockSymbols;
+        }
         public async Task InsertInitialProcess(int symbolId, DateTime processDate, string successFlag)
         {
             var parameters = new DynamicParameters();

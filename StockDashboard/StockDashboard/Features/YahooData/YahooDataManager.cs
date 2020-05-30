@@ -9,10 +9,10 @@ namespace StockDashboard.Features.YahooData
 {
     public class YahooDataManager
     {
-        public BaseRepository db { get; set; }
+        public BaseRepository BR { get; set; }
         public YahooDataManager()
         {
-            db = new BaseRepository();
+            BR = new BaseRepository();
         }
 
         public async Task RunMethods()
@@ -20,7 +20,15 @@ namespace StockDashboard.Features.YahooData
             //await Test("AAPL", new DateTime(2016, 1, 1), new DateTime(2016, 7, 1));
         }
 
+        public async void StartService()
+        {
 
+            //on app startup, check if dailyProcess has ran for latest available market date.
+            //execute daily process for each symbolId that needs it.
+            //after startup processing, wait until next market date rollover, execute daily process on symbols.
+            var outOfDate = BR.FindUnprocessedStocks
+
+        }
 
         public void DailyDataRefresh(string symbol)
         {
