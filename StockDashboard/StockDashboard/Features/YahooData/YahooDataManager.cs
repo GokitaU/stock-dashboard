@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StockDashboard.Features.Connections;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,9 +9,10 @@ namespace StockDashboard.Features.YahooData
 {
     public class YahooDataManager
     {
+        public BaseRepository db { get; set; }
         public YahooDataManager()
         {
-            
+            db = new BaseRepository();
         }
 
         public async Task RunMethods()

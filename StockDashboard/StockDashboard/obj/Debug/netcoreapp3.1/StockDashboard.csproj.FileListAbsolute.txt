@@ -325,9 +325,6 @@ C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDash
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Debug\netcoreapp3.1\StockDashboard.csprojAssemblyReference.cache
-C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Debug\netcoreapp3.1\StockDashboard.csproj.CoreCompileInputs.cache
-C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Debug\netcoreapp3.1\StockDashboard.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Debug\netcoreapp3.1\StockDashboard.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Debug\netcoreapp3.1\StockDashboard.RazorAssemblyInfo.cache
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Debug\netcoreapp3.1\StockDashboard.RazorAssemblyInfo.cs
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Debug\netcoreapp3.1\StockDashboard.AssemblyInfoInputs.cache
@@ -356,3 +353,4 @@ C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDash
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Debug\netcoreapp3.1\Flurl.Http.dll
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Debug\netcoreapp3.1\YahooFinanceApi.dll
+C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Debug\netcoreapp3.1\Dapper.dll
