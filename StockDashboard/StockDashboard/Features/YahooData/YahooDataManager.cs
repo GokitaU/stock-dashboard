@@ -20,6 +20,11 @@ namespace StockDashboard.Features.YahooData
             //await Test("AAPL", new DateTime(2016, 1, 1), new DateTime(2016, 7, 1));
         }
 
+        public async Task InitializeSymbols()
+        {
+            var result = await BR.FindUnprocessedStocks();
+        }
+
         public async void StartService()
         {
 

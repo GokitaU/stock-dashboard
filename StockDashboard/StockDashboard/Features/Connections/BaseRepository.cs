@@ -58,6 +58,20 @@ namespace StockDashboard.Features.Connections
             }
             return stockSymbols;
         }
+        public async Task InsertDailyProcess(int symbolId, DateTime lastestDate, string successFlag)
+        {
+            var parameters = new DynamicParameters();
+            parameters.Add("@SymbolId", symbolId);
+            parameters.Add("@LastestDate", lastestDate);
+            parameters.Add("@SuccessFlag", successFlag);
+            var sqlCommand = $"INSERT INTO DailyProcess (SymbolId, LastestDate, SuccessFlag) VALUES (@SymbolId, @LastestDate, @SuccessFlag)";
+            using (IDbConnection cn = Connection)
+            {
+                cn.Open();
+                await cn.ExecuteAsync(sqlCommand, parameters);
+                cn.Close();
+            }
+        }
         public async Task InsertInitialProcess(int symbolId, DateTime processDate, string successFlag)
         {
             var parameters = new DynamicParameters();
