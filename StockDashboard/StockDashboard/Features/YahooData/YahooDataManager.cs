@@ -32,21 +32,18 @@ namespace StockDashboard.Features.YahooData
 
         public async Task InitializeData(RootSymbolIndex stock)
         {
- 
             var beginDate = new DateTime(2000, 1, 1);
             var endDate = DateTime.Now.AddDays(-1);
             var candles = await GetHistoricalCandles(stock.Symbol, beginDate, endDate);
             if(candles.Count > 0)
             {
-                BR.BulkCandleInsert(candles, stock.Id);
-
-                //sqlbulk insert
-                //insert success flag 'Y' for InitialProcess
-                //insert success flag 'Y' for dailyprocess
+                await BR.BulkCandleInsert(candles, stock.Id);
+                await BR.InsertInitialProcess(stock.Id, GlobalDates.ProcessDate, "Y");
+                await BR.InsertDailyProcess(stock.Id, GlobalDates.ProcessDate, "Y");
             }
             else if(candles.Count == 0)
             {
-                //insert success flag 'N' for InitialProcess
+                await BR.InsertInitialProcess(stock.Id, GlobalDates.ProcessDate, "N");
             }
         }
 
