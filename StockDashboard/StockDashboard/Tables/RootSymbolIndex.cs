@@ -7,8 +7,8 @@ namespace StockDashboard.Tables
 {
     public class RootSymbolIndex
     {
-        int Id { get; set; }
-        string Symbol { get; set; }
-        string CompanyName { get; set; }
+        public int Id { get; set; }
+        public string Symbol { get; set; }
+        public string CompanyName { get; set; }
     }
 }

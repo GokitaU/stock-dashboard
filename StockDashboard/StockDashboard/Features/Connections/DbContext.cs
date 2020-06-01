@@ -17,5 +17,12 @@ namespace StockDashboard.Features.Connections
                 return new SqlConnection(Startup.Configuration.GetConnectionString("SqlStockProject"));
             }
         }
+        internal SqlConnection SqlConnect
+        {
+            get
+            {
+                return new SqlConnection(Startup.Configuration.GetConnectionString("SqlStockProject"));
+            }
+        }
     }
 }

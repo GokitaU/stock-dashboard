@@ -3,8 +3,10 @@ using StockDashboard.Tables;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
+using YahooFinanceApi;
 
 namespace StockDashboard.Features.Connections
 {
@@ -25,7 +27,7 @@ namespace StockDashboard.Features.Connections
             }
             return stockSymbols;
         }
-
+        
         public async Task<List<RootSymbolIndex>> FindUnprocessedStocks()
         {
             List<RootSymbolIndex> stockSymbols;
@@ -87,6 +89,57 @@ namespace StockDashboard.Features.Connections
             }
         }
 
+        public async Task BulkCandleInsert(List<Candle> data, int symbolId)
+        {
+            var dataTable = ListToDataTable(data, symbolId);
+            using (SqlConnection sqlConn = SqlConnect)
+            {
+                sqlConn.Open();
+                using (SqlBulkCopy sqlbc = new SqlBulkCopy(sqlConn))
+                {
+                    sqlbc.DestinationTableName = "DailyHistoricalPriceData";
+                    sqlbc.ColumnMappings.Add("SymbolId", "SymbolId");
+                    sqlbc.ColumnMappings.Add("MarketDate", "MarketDate");
+                    sqlbc.ColumnMappings.Add("Open", "Open");
+                    sqlbc.ColumnMappings.Add("High", "High");
+                    sqlbc.ColumnMappings.Add("Low", "Low");
+                    sqlbc.ColumnMappings.Add("Close", "Close");
+                    sqlbc.ColumnMappings.Add("Volume", "Volume");
+                    sqlbc.ColumnMappings.Add("AdjustedClose", "AdjustedClose");
+                    await sqlbc.WriteToServerAsync(dataTable);
+                }
+                sqlConn.Close();
+            }
+        }
+
+        public DataTable ListToDataTable(List<Candle> data, int symbolId)
+        {
+            var table = new DataTable();
+            table.Columns.Add("SymbolId", typeof(int));
+            table.Columns.Add("MarketDate", typeof(DateTime));
+            table.Columns.Add("Open", typeof(decimal));
+            table.Columns.Add("High", typeof(decimal));
+            table.Columns.Add("Low", typeof(decimal));
+            table.Columns.Add("Close", typeof(decimal));
+            table.Columns.Add("Volume", typeof(long));
+            table.Columns.Add("AdjustedClose", typeof(decimal));
+            foreach (var candle in data)
+            {
+                var row = new Object[]
+                {
+                    symbolId,
+                    candle.DateTime,
+                    candle.Open,
+                    candle.High,
+                    candle.Low,
+                    candle.Close,
+                    candle.Volume,
+                    candle.AdjustedClose
+                };
+                table.Rows.Add(row);
+            }
+            return table;
+        }
         //public List<YahooStockSymbols> UpdateYahooDate(DateTime Date)
         //{
         //    //SELECT * FROM YahooStockSymbols WHERE DataEndDate < '3/1/2020' AND InitialProcessFlag = 'Y'
