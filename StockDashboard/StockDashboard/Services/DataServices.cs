@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace StockDashboard.Services
 {
-    public class DataServices
+    public class DataServices : BackgroundService
     {
         //https://medium.com/@daniel.sagita/backgroundservice-for-a-long-running-work-3debe8f8d25b
     }
