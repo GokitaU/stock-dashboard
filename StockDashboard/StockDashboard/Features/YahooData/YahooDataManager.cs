@@ -48,13 +48,15 @@ namespace StockDashboard.Features.YahooData
             }
         }
 
-        public async void StartService()
+        public async Task StartService()
         {
             await InitializeSymbols();
             await DailyDataUpdateProcess();
             while (true)
             {
                 var currentTime = DateTime.Now;
+                DateTime tomorrow;
+                TimeSpan span;
                 switch (currentTime.DayOfWeek)
                 {
                     case DayOfWeek.Monday:
@@ -62,29 +64,23 @@ namespace StockDashboard.Features.YahooData
                     case DayOfWeek.Wednesday:
                     case DayOfWeek.Thursday:
                     case DayOfWeek.Friday:
+                        tomorrow = currentTime.AddDays(1).Date;
+                        span = new TimeSpan(tomorrow.Ticks - currentTime.Ticks);
+                        Thread.Sleep((int)span.TotalMilliseconds);
+                        Thread.Sleep(5 * 60 * 1000);
+                        await InitializeSymbols();
+                        await DailyDataUpdateProcess();
                         break;
                     case DayOfWeek.Saturday:
-                        break;
                     case DayOfWeek.Sunday:
+                        tomorrow = currentTime.AddDays(1).Date;
+                        span = new TimeSpan(tomorrow.Ticks - currentTime.Ticks);
+                        Thread.Sleep((int)span.TotalMilliseconds);
+                        Thread.Sleep(5 * 60 * 1000);
                         break;
                 }
-                var Tomorrow = currentTime.AddDays(1).Date;
-                var span = new TimeSpan(Tomorrow.Ticks - currentTime.Ticks);
-
-
-                Thread.Sleep((int)span.TotalMilliseconds);
-                Thread.Sleep(5 * 60 * 1000);
-                await InitializeSymbols();
-                await DailyDataUpdateProcess();
             }
-
-            //on app startup, check if dailyProcess has ran for latest available market date.
-            //execute daily process for each symbolId that needs it.
-            //after startup processing, wait until next market date rollover, execute daily process on symbols.
-            //var outOfDate = BR.FindUnprocessedStocks
-
         }
-
 
         public async Task DailyDataUpdateProcess()
         {
