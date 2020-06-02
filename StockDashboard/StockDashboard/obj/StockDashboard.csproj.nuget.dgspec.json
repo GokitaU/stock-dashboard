@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gonzalo\\Dropbox\\GitHubProjects\\stock-dashboard\\StockDashboard\\StockDashboard\\StockDashboard.csproj": {}
+    "E:\\Users\\Desktop\\File Folder\\CS\\stock-dashboard\\StockDashboard\\StockDashboard\\StockDashboard.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gonzalo\\Dropbox\\GitHubProjects\\stock-dashboard\\StockDashboard\\StockDashboard\\StockDashboard.csproj": {
+    "E:\\Users\\Desktop\\File Folder\\CS\\stock-dashboard\\StockDashboard\\StockDashboard\\StockDashboard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gonzalo\\Dropbox\\GitHubProjects\\stock-dashboard\\StockDashboard\\StockDashboard\\StockDashboard.csproj",
+        "projectUniqueName": "E:\\Users\\Desktop\\File Folder\\CS\\stock-dashboard\\StockDashboard\\StockDashboard\\StockDashboard.csproj",
         "projectName": "StockDashboard",
-        "projectPath": "C:\\Users\\Gonzalo\\Dropbox\\GitHubProjects\\stock-dashboard\\StockDashboard\\StockDashboard\\StockDashboard.csproj",
-        "packagesPath": "C:\\Users\\Gonzalo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gonzalo\\Dropbox\\GitHubProjects\\stock-dashboard\\StockDashboard\\StockDashboard\\obj\\",
+        "projectPath": "E:\\Users\\Desktop\\File Folder\\CS\\stock-dashboard\\StockDashboard\\StockDashboard\\StockDashboard.csproj",
+        "packagesPath": "C:\\Users\\Jacob\\.nuget\\packages\\",
+        "outputPath": "E:\\Users\\Desktop\\File Folder\\CS\\stock-dashboard\\StockDashboard\\StockDashboard\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Gonzalo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jacob\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -46,6 +47,10 @@
               "target": "Package",
               "version": "[2.0.35, )"
             },
+            "Deedle": {
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
               "version": "[3.1.4, )"
@@ -69,6 +74,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -77,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
