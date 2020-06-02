@@ -354,3 +354,6 @@ C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDash
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Debug\netcoreapp3.1\YahooFinanceApi.dll
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Debug\netcoreapp3.1\Dapper.dll
+C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Debug\netcoreapp3.1\StockDashboard.csproj.CoreCompileInputs.cache
+C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Debug\netcoreapp3.1\StockDashboard.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Debug\netcoreapp3.1\StockDashboard.MvcApplicationPartsAssemblyInfo.cache

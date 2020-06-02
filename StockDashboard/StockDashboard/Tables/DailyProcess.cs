@@ -7,8 +7,8 @@ namespace StockDashboard.Tables
 {
     public class DailyProcess
     {
-        int SymbolId { get; set; }
-        DateTime LastestDate { get; set; }
-        string SuccessFlag { get; set; }
+        public int SymbolId { get; set; }
+        public DateTime LastestDate { get; set; }
+        public string SuccessFlag { get; set; }
     }
 }

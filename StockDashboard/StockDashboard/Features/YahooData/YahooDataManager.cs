@@ -3,6 +3,7 @@ using StockDashboard.Tables;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using YahooFinanceApi;
 
@@ -49,6 +50,33 @@ namespace StockDashboard.Features.YahooData
 
         public async void StartService()
         {
+            await InitializeSymbols();
+            await DailyDataUpdateProcess();
+            while (true)
+            {
+                var currentTime = DateTime.Now;
+                switch (currentTime.DayOfWeek)
+                {
+                    case DayOfWeek.Monday:
+                    case DayOfWeek.Tuesday:
+                    case DayOfWeek.Wednesday:
+                    case DayOfWeek.Thursday:
+                    case DayOfWeek.Friday:
+                        break;
+                    case DayOfWeek.Saturday:
+                        break;
+                    case DayOfWeek.Sunday:
+                        break;
+                }
+                var Tomorrow = currentTime.AddDays(1).Date;
+                var span = new TimeSpan(Tomorrow.Ticks - currentTime.Ticks);
+
+
+                Thread.Sleep((int)span.TotalMilliseconds);
+                Thread.Sleep(5 * 60 * 1000);
+                await InitializeSymbols();
+                await DailyDataUpdateProcess();
+            }
 
             //on app startup, check if dailyProcess has ran for latest available market date.
             //execute daily process for each symbolId that needs it.
@@ -58,10 +86,19 @@ namespace StockDashboard.Features.YahooData
         }
 
 
-        public void DailyDataRefresh(string symbol)
+        public async Task DailyDataUpdateProcess()
         {
-            //var LastDateOnRecord = DateTime.Now
-            //var 
+            var stocks = await BR.StocksToUpdate(GlobalDates.AvailableMarketDate);
+            foreach(var item in stocks)
+            {
+                var info = await BR.StockInfoById(item.SymbolId);
+                var candles = await GetHistoricalCandles(info.Symbol, item.LastestDate, GlobalDates.AvailableMarketDate);
+                if(candles.Count > 0)
+                {
+                    await BR.BulkCandleInsert(candles, item.SymbolId);
+                    await BR.UpdateDailyProcessDate(item.SymbolId, GlobalDates.AvailableMarketDate, "Y");
+                }
+            }
         }
         public async Task<List<Candle>> GetHistoricalCandles(string symbol, DateTime from, DateTime to)
         {

@@ -41,20 +41,34 @@ namespace StockDashboard.Features.Connections
             }
             return stockSymbols;
         }
-
-        public async Task<List<RootSymbolIndex>> StocksToUpdate(DateTime availableDate)
+        public async Task<RootSymbolIndex> StockInfoById(int id)
         {
             var parameters = new DynamicParameters();
-            parameters.Add("@AvailableDate", availableDate);
-            List<RootSymbolIndex> stockSymbols;
-            var sqlQuery = @"SELECT RSI.* FROM RootSymbolIndex RSI, DailyProcess DP 
-                              WHERE DP.SymbolId = RSI.Id 
-                                AND CONVERT(DATE,MAX(DP.LastestDate)) < CONVERT(DATE, @AvailableDate) 
-                           ORDER BY RSI.Id";
+            parameters.Add("@Id", id);
+            RootSymbolIndex index;
+            var sqlQuery = @"SELECT * FROM RootSymbolIndex 
+                              WHERE Id = @Id";
             using (IDbConnection cn = Connection)
             {
                 cn.Open();
-                var result = await cn.QueryAsync<RootSymbolIndex>(sqlQuery);
+                var result = await cn.QueryFirstAsync<RootSymbolIndex>(sqlQuery);
+                cn.Close();
+                index = result;
+            }
+            return index;
+        }
+        public async Task<List<DailyProcess>> StocksToUpdate(DateTime availableDate)
+        {
+            var parameters = new DynamicParameters();
+            parameters.Add("@AvailableDate", availableDate);
+            List<DailyProcess> stockSymbols;
+            var sqlQuery = @"SELECT * FROM DailyProcess 
+                              WHERE CONVERT(DATE, LastestDate) < CONVERT(DATE, @AvailableDate) 
+                           ORDER BY SymbolId";
+            using (IDbConnection cn = Connection)
+            {
+                cn.Open();
+                var result = await cn.QueryAsync<DailyProcess>(sqlQuery);
                 cn.Close();
                 stockSymbols = result.ToList();
             }
@@ -154,14 +168,17 @@ namespace StockDashboard.Features.Connections
         //    return stockSymbols;
         //}
 
-        public void YahooDataDateUpdate(string symbol, DateTime dataEndDate)
+        public async Task UpdateDailyProcessDate(int symbolId, DateTime lastestDate, string successFlag)
         {
-            var end = $"{dataEndDate.Month}/{dataEndDate.Day}/{dataEndDate.Year}";
-            var sqlCommand = $"UPDATE YahooStockSymbols SET DataEndDate = '{end}' WHERE Symbol = '{symbol}' ";
+            var parameters = new DynamicParameters();
+            parameters.Add("@SymbolId", symbolId);
+            parameters.Add("@LastestDate", lastestDate);
+            parameters.Add("@SuccessFlag", successFlag);
+            var sqlCommand = $"UPDATE DailyProcess SET LastestDate = @LastestDate, SuccessFlag = @SuccessFlag WHERE SymbolId = @SymbolId";
             using (IDbConnection cn = Connection)
             {
                 cn.Open();
-                cn.Execute(sqlCommand);
+                await cn.ExecuteAsync(sqlCommand);
                 cn.Close();
             }
         }
