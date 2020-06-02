@@ -35,21 +35,30 @@ namespace StockDashboard.Features.YahooData
         {
             var beginDate = new DateTime(2000, 1, 1);
             var endDate = DateTime.Now.AddDays(-1);
-            var candles = await GetHistoricalCandles(stock.Symbol, beginDate, endDate);
-            if(candles.Count > 0)
+            try
             {
-                await BR.BulkCandleInsert(candles, stock.Id);
-                await BR.InsertInitialProcess(stock.Id, GlobalDates.ProcessDate, "Y");
-                await BR.InsertDailyProcess(stock.Id, GlobalDates.ProcessDate, "Y");
+                var candles = await GetHistoricalCandles(stock.Symbol, beginDate, endDate);
+                if (candles.Count > 0)
+                {
+                    await BR.BulkCandleInsert(candles, stock.Id);
+                    await BR.InsertInitialProcess(stock.Id, GlobalDates.ProcessDate, "Y");
+                    await BR.InsertDailyProcess(stock.Id, GlobalDates.ProcessDate, "Y");
+                }
+                else if (candles.Count == 0)
+                {
+                    await BR.InsertInitialProcess(stock.Id, GlobalDates.ProcessDate, "N");
+                }
             }
-            else if(candles.Count == 0)
+            catch (Exception exc)
             {
-                await BR.InsertInitialProcess(stock.Id, GlobalDates.ProcessDate, "N");
+
             }
+
         }
 
         public async Task StartService()
         {
+            GlobalDates.SetVariables();
             await InitializeSymbols();
             await DailyDataUpdateProcess();
             while (true)

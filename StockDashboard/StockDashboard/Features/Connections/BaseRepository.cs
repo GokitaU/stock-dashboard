@@ -98,7 +98,15 @@ namespace StockDashboard.Features.Connections
             using (IDbConnection cn = Connection)
             {
                 cn.Open();
-                await cn.ExecuteAsync(sqlCommand, parameters);
+                try
+                {
+                    await cn.ExecuteAsync(sqlCommand, parameters);
+                }
+                catch (Exception exc)
+                {
+
+                }
+
                 cn.Close();
             }
         }
