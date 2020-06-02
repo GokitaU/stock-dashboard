@@ -54,6 +54,7 @@ namespace StockDashboard.Features.YahooData
             await DailyDataUpdateProcess();
             while (true)
             {
+                GlobalDates.SetVariables();
                 var currentTime = DateTime.Now;
                 DateTime tomorrow;
                 TimeSpan span;
