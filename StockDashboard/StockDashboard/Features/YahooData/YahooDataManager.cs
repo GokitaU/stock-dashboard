@@ -109,10 +109,17 @@ namespace StockDashboard.Features.YahooData
         public async Task<List<Candle>> GetHistoricalCandles(string symbol, DateTime from, DateTime to)
         {
             List<Candle> list = new List<Candle>();
-            var history = await Yahoo.GetHistoricalAsync(symbol, from, to, Period.Daily);
-            if(history.Count > 0)
+            try
             {
-                list = history.ToList();
+                var history = await Yahoo.GetHistoricalAsync(symbol, from, to, Period.Daily);
+                if (history.Count > 0)
+                {
+                    list = history.ToList();
+                }
+            }
+            catch (Exception exc)
+            {
+
             }
             return list;
         }

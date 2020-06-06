@@ -51,7 +51,7 @@ namespace StockDashboard.Features.Connections
             using (IDbConnection cn = Connection)
             {
                 cn.Open();
-                var result = await cn.QueryFirstAsync<RootSymbolIndex>(sqlQuery);
+                var result = await cn.QueryFirstAsync<RootSymbolIndex>(sqlQuery, parameters);
                 cn.Close();
                 index = result;
             }
@@ -62,13 +62,13 @@ namespace StockDashboard.Features.Connections
             var parameters = new DynamicParameters();
             parameters.Add("@AvailableDate", availableDate);
             List<DailyProcess> stockSymbols;
-            var sqlQuery = @"SELECT * FROM DailyProcess 
+            var sqlQuery = @$"SELECT * FROM DailyProcess 
                               WHERE CONVERT(DATE, LastestDate) < CONVERT(DATE, @AvailableDate) 
                            ORDER BY SymbolId";
             using (IDbConnection cn = Connection)
             {
                 cn.Open();
-                var result = await cn.QueryAsync<DailyProcess>(sqlQuery);
+                var result = await cn.QueryAsync<DailyProcess>(sqlQuery, parameters);
                 cn.Close();
                 stockSymbols = result.ToList();
             }
@@ -113,24 +113,31 @@ namespace StockDashboard.Features.Connections
 
         public async Task BulkCandleInsert(List<Candle> data, int symbolId)
         {
-            var dataTable = ListToDataTable(data, symbolId);
-            using (SqlConnection sqlConn = SqlConnect)
+            try
             {
-                sqlConn.Open();
-                using (SqlBulkCopy sqlbc = new SqlBulkCopy(sqlConn))
+                var dataTable = ListToDataTable(data, symbolId);
+                using (SqlConnection sqlConn = SqlConnect)
                 {
-                    sqlbc.DestinationTableName = "DailyHistoricalPriceData";
-                    sqlbc.ColumnMappings.Add("SymbolId", "SymbolId");
-                    sqlbc.ColumnMappings.Add("MarketDate", "MarketDate");
-                    sqlbc.ColumnMappings.Add("Open", "Open");
-                    sqlbc.ColumnMappings.Add("High", "High");
-                    sqlbc.ColumnMappings.Add("Low", "Low");
-                    sqlbc.ColumnMappings.Add("Close", "Close");
-                    sqlbc.ColumnMappings.Add("Volume", "Volume");
-                    sqlbc.ColumnMappings.Add("AdjustedClose", "AdjustedClose");
-                    await sqlbc.WriteToServerAsync(dataTable);
+                    sqlConn.Open();
+                    using (SqlBulkCopy sqlbc = new SqlBulkCopy(sqlConn))
+                    {
+                        sqlbc.DestinationTableName = "DailyHistoricalPriceData";
+                        sqlbc.ColumnMappings.Add("SymbolId", "SymbolId");
+                        sqlbc.ColumnMappings.Add("MarketDate", "MarketDate");
+                        sqlbc.ColumnMappings.Add("Open", "Open");
+                        sqlbc.ColumnMappings.Add("High", "High");
+                        sqlbc.ColumnMappings.Add("Low", "Low");
+                        sqlbc.ColumnMappings.Add("Close", "Close");
+                        sqlbc.ColumnMappings.Add("Volume", "Volume");
+                        sqlbc.ColumnMappings.Add("AdjustedClose", "AdjustedClose");
+                        await sqlbc.WriteToServerAsync(dataTable);
+                    }
+                    sqlConn.Close();
                 }
-                sqlConn.Close();
+            }
+            catch (Exception exc)
+            {
+
             }
         }
 
@@ -186,7 +193,7 @@ namespace StockDashboard.Features.Connections
             using (IDbConnection cn = Connection)
             {
                 cn.Open();
-                await cn.ExecuteAsync(sqlCommand);
+                await cn.ExecuteAsync(sqlCommand, parameters);
                 cn.Close();
             }
         }
