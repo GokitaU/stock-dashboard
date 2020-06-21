@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using Microsoft.AspNetCore.Mvc.Formatters;
 using StockDashboard.Tables;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,36 @@ namespace StockDashboard.Features.Connections
     public class BaseRepository : DbContext
     {
 
+
+
+        public async Task<List<DailyHistoricalPriceData>> LoadCandles(int SymbolId)
+        {
+            List<DailyHistoricalPriceData> stockSymbols;
+            var parameters = new DynamicParameters();
+            parameters.Add("@SymbolId", SymbolId);
+            var sqlQuery = "SELECT * FROM DailyHistoricalPriceData WHERE SymbolId = @SymbolId;";
+            using (IDbConnection cn = Connection)
+            {
+                cn.Open();
+                var result = await cn.QueryAsync<DailyHistoricalPriceData>(sqlQuery, parameters);
+                cn.Close();
+                stockSymbols = result.ToList();
+            }
+            return stockSymbols;
+        }
+        public async Task<List<RootSymbolIndex>> QuerySymbols()
+        {
+            List<RootSymbolIndex> stockSymbols;
+            var sqlQuery = "SELECT RSI.Id, RSI.Symbol, RSI.CompanyName FROM RootSymbolIndex RSI, InitialProcess IP WHERE RSI.Id = IP.SymbolId AND IP.SuccessFlag = 'Y';";
+            using (IDbConnection cn = Connection)
+            {
+                cn.Open();
+                var result = await cn.QueryAsync<RootSymbolIndex>(sqlQuery);
+                cn.Close();
+                stockSymbols = result.ToList();
+            }
+            return stockSymbols;
+        }
 
         public async Task<List<RootSymbolIndex>> FindProcessedStocks()
         {

@@ -7,13 +7,13 @@ namespace StockDashboard.Tables
 {
     public class DailyHistoricalPriceData
     {
-        int SymbolId { get; set; }
-        DateTime MarketDate { get; set; }
-        decimal Open { get; set; }
-        decimal High { get; set; }
-        decimal Low { get; set; }
-        decimal Close { get; set; }
-        long Volume { get; set; }
-        decimal AdjustedClose { get; set; }
+        public int SymbolId { get; set; }
+        public DateTime MarketDate { get; set; }
+        public decimal Open { get; set; }
+        public decimal High { get; set; }
+        public decimal Low { get; set; }
+        public decimal Close { get; set; }
+        public long Volume { get; set; }
+        public decimal AdjustedClose { get; set; }
     }
 }

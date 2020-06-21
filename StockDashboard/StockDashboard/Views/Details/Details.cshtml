@@ -1,0 +1,300 @@
+﻿@{
+    ViewData["Title"] = "Stock Details";
+    StockDetailsModel stockDetailsModel = Model;
+}
+
+    <div style="margin-left:auto;margin-right:auto;">
+        <h1>@(stockDetailsModel.Symbol + " - " + stockDetailsModel.CompanyName)</h1>
+    </div>
+
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        var chart = new CanvasJS.Chart("fullHistory",
+            {
+                zoomEnabled:true,
+                title: {
+                    text:  "All Historical Data"
+                },
+                legend: {
+                    cursor: "pointer",
+                    itemclick: function (e) {
+                        //console.log("legend click: " + e.dataPointIndex);
+                        //console.log(e);
+                        if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+                            e.dataSeries.visible = false;
+                        } else {
+                            e.dataSeries.visible = true;
+                        }
+
+                        e.chart.render();
+                    }
+                },
+                axisX:{
+                    intervalType: "day"
+                },
+                axisY:{
+                    maximum: @stockDetailsModel.TwentyYearCandles.ViewMax,
+                    minimum: @stockDetailsModel.TwentyYearCandles.ViewMin
+                 },
+                data: [
+                    {
+                        type: "candlestick",
+                        xValueType: "dateTime",
+		                showInLegend: true,
+                        name: "Stock Price",
+                        dataPoints: @Html.Raw(stockDetailsModel.TwentyYearCandles.JsonCandleSticks)
+                    },
+                    {
+                        type: "line",
+                        showInLegend: true,
+                        xValueType: "dateTime",
+                        dataPoints: @Html.Raw(stockDetailsModel.TwentyYearCandles.JsonClosingPrice)
+                    }
+                ]
+            });
+
+        var chart2 = new CanvasJS.Chart("fiveYear",
+            {
+                zoomEnabled:true,
+                title: {
+                    text:  "Five Year Historical Data"
+                },
+                legend: {
+                    cursor: "pointer",
+                    itemclick: function (e) {
+                        //console.log("legend click: " + e.dataPointIndex);
+                        //console.log(e);
+                        if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+                            e.dataSeries.visible = false;
+                        } else {
+                            e.dataSeries.visible = true;
+                        }
+
+                        e.chart.render();
+                    }
+                },
+                axisX:{
+                    intervalType: "day"
+                },
+                axisY:{
+                    maximum: @stockDetailsModel.FiveYearCandles.ViewMax,
+                    minimum: @stockDetailsModel.FiveYearCandles.ViewMin
+                 },
+                data: [
+                    {
+                        type: "candlestick",
+                        xValueType: "dateTime",
+		                showInLegend: true,
+                        name: "Stock Price",
+                        dataPoints: @Html.Raw(stockDetailsModel.FiveYearCandles.JsonCandleSticks)
+                    },
+                    {
+                        type: "line",
+                        showInLegend: true,
+                        xValueType: "dateTime",
+                        dataPoints: @Html.Raw(stockDetailsModel.FiveYearCandles.JsonClosingPrice)
+                    }
+                ]
+            });
+
+        var chart3 = new CanvasJS.Chart("oneYear",
+            {
+                zoomEnabled:true,
+                title: {
+                    text:  "One Year Historical Data"
+                },
+                legend: {
+                    cursor: "pointer",
+                    itemclick: function (e) {
+                        //console.log("legend click: " + e.dataPointIndex);
+                        //console.log(e);
+                        if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+                            e.dataSeries.visible = false;
+                        } else {
+                            e.dataSeries.visible = true;
+                        }
+
+                        e.chart.render();
+                    }
+                },
+                axisX:{
+                    intervalType: "day"
+                },
+                axisY:{
+                    maximum: @stockDetailsModel.OneYearCandles.ViewMax,
+                    minimum: @stockDetailsModel.OneYearCandles.ViewMin
+                 },
+                data: [
+                    {
+                        type: "candlestick",
+                        xValueType: "dateTime",
+		                showInLegend: true,
+                        name: "Stock Price",
+                        dataPoints: @Html.Raw(stockDetailsModel.OneYearCandles.JsonCandleSticks)
+                    },
+                    {
+                        type: "line",
+                        showInLegend: true,
+                        xValueType: "dateTime",
+                        dataPoints: @Html.Raw(stockDetailsModel.OneYearCandles.JsonClosingPrice)
+                    }
+                ]
+            });
+
+        var chart4 = new CanvasJS.Chart("sixMonth",
+            {
+                zoomEnabled:true,
+                title: {
+                    text:  "Six Month Historical Data"
+                },
+                legend: {
+                    cursor: "pointer",
+                    itemclick: function (e) {
+                        //console.log("legend click: " + e.dataPointIndex);
+                        //console.log(e);
+                        if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+                            e.dataSeries.visible = false;
+                        } else {
+                            e.dataSeries.visible = true;
+                        }
+
+                        e.chart.render();
+                    }
+                },
+                axisX:{
+                    intervalType: "day"
+                },
+                axisY:{
+                    maximum: @stockDetailsModel.SixMonthCandles.ViewMax,
+                    minimum: @stockDetailsModel.SixMonthCandles.ViewMin
+                 },
+                data: [
+                    {
+                        type: "candlestick",
+                        xValueType: "dateTime",
+		                showInLegend: true,
+                        name: "Stock Price",
+                        dataPoints: @Html.Raw(stockDetailsModel.SixMonthCandles.JsonCandleSticks)
+                    },
+                    {
+                        type: "line",
+                        showInLegend: true,
+                        xValueType: "dateTime",
+                        dataPoints: @Html.Raw(stockDetailsModel.SixMonthCandles.JsonClosingPrice)
+                    }
+                ]
+            });
+
+        var chart5 = new CanvasJS.Chart("oneMonth",
+            {
+                zoomEnabled:true,
+                title: {
+                    text:  "One Month Historical Data"
+                },
+                legend: {
+                    cursor: "pointer",
+                    itemclick: function (e) {
+                        //console.log("legend click: " + e.dataPointIndex);
+                        //console.log(e);
+                        if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+                            e.dataSeries.visible = false;
+                        } else {
+                            e.dataSeries.visible = true;
+                        }
+
+                        e.chart.render();
+                    }
+                },
+                axisX:{
+                    intervalType: "day"
+                },
+                axisY:{
+                    maximum: @stockDetailsModel.OneMonthCandles.ViewMax,
+                    minimum: @stockDetailsModel.OneMonthCandles.ViewMin
+                 },
+                data: [
+                    {
+                        type: "candlestick",
+                        xValueType: "dateTime",
+		                showInLegend: true,
+                        name: "Stock Price",
+                        dataPoints: @Html.Raw(stockDetailsModel.OneMonthCandles.JsonCandleSticks)
+                    },
+                    {
+                        type: "line",
+                        showInLegend: true,
+                        xValueType: "dateTime",
+                        dataPoints: @Html.Raw(stockDetailsModel.OneMonthCandles.JsonClosingPrice)
+                    }
+                ]
+            });
+
+        var chart6 = new CanvasJS.Chart("twoWeeks",
+            {
+                zoomEnabled:true,
+                title: {
+                    text:  "Two Week Historical Data"
+                },
+                legend: {
+                    cursor: "pointer",
+                    itemclick: function (e) {
+                        //console.log("legend click: " + e.dataPointIndex);
+                        //console.log(e);
+                        if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+                            e.dataSeries.visible = false;
+                        } else {
+                            e.dataSeries.visible = true;
+                        }
+
+                        e.chart.render();
+                    }
+                },
+                axisX:{
+                    intervalType: "day"
+                },
+                axisY:{
+                    maximum: @stockDetailsModel.TwoWeekCandles.ViewMax,
+                    minimum: @stockDetailsModel.TwoWeekCandles.ViewMin
+                 },
+                data: [
+                    {
+                        type: "candlestick",
+                        xValueType: "dateTime",
+		                showInLegend: true,
+                        name: "Stock Price",
+                        dataPoints: @Html.Raw(stockDetailsModel.TwoWeekCandles.JsonCandleSticks)
+                    },
+                    {
+                        type: "line",
+                        showInLegend: true,
+                        xValueType: "dateTime",
+                        dataPoints: @Html.Raw(stockDetailsModel.TwoWeekCandles.JsonClosingPrice)
+                    }
+                ]
+            });
+
+        chart.render();
+        chart2.render();
+        chart3.render();
+        chart4.render();
+        chart5.render();
+        chart6.render();
+
+    }
+</script>
+
+<body>
+    <div id="fullHistory" style="height: 400px; width: 100%;">
+    </div>
+    <div id="fiveYear" style="height: 400px; width: 100%;">
+    </div>
+    <div id="oneYear" style="height: 400px; width: 100%;">
+    </div>
+    <div id="sixMonth" style="height: 400px; width: 100%;">
+    </div>
+    <div id="oneMonth" style="height: 400px; width: 100%;">
+    </div>
+    <div id="twoWeeks" style="height: 400px; width: 100%;">
+    </div>
+</body>
