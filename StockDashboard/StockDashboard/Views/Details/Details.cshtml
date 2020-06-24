@@ -9,6 +9,8 @@
 
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 <script type="text/javascript">
+
+
     window.onload = function () {
         var chart = new CanvasJS.Chart("fullHistory",
             {
@@ -42,12 +44,13 @@
                         type: "candlestick",
                         xValueType: "dateTime",
 		                showInLegend: true,
-                        name: "Stock Price",
+                        name: "Candles",
                         dataPoints: @Html.Raw(stockDetailsModel.TwentyYearCandles.JsonCandleSticks)
                     },
                     {
                         type: "line",
                         showInLegend: true,
+                        name: "Closing Price",
                         xValueType: "dateTime",
                         dataPoints: @Html.Raw(stockDetailsModel.TwentyYearCandles.JsonClosingPrice)
                     }
@@ -86,13 +89,14 @@
                         type: "candlestick",
                         xValueType: "dateTime",
 		                showInLegend: true,
-                        name: "Stock Price",
+                        name: "Candles",
                         dataPoints: @Html.Raw(stockDetailsModel.FiveYearCandles.JsonCandleSticks)
                     },
                     {
                         type: "line",
                         showInLegend: true,
                         xValueType: "dateTime",
+                        name: "Closing Price",
                         dataPoints: @Html.Raw(stockDetailsModel.FiveYearCandles.JsonClosingPrice)
                     }
                 ]
@@ -130,12 +134,13 @@
                         type: "candlestick",
                         xValueType: "dateTime",
 		                showInLegend: true,
-                        name: "Stock Price",
+                        name: "Candles",
                         dataPoints: @Html.Raw(stockDetailsModel.OneYearCandles.JsonCandleSticks)
                     },
                     {
                         type: "line",
                         showInLegend: true,
+                        name: "Closing Price",
                         xValueType: "dateTime",
                         dataPoints: @Html.Raw(stockDetailsModel.OneYearCandles.JsonClosingPrice)
                     }
@@ -174,12 +179,13 @@
                         type: "candlestick",
                         xValueType: "dateTime",
 		                showInLegend: true,
-                        name: "Stock Price",
+                        name: "Candles",
                         dataPoints: @Html.Raw(stockDetailsModel.SixMonthCandles.JsonCandleSticks)
                     },
                     {
                         type: "line",
                         showInLegend: true,
+                        name: "Closing Price",
                         xValueType: "dateTime",
                         dataPoints: @Html.Raw(stockDetailsModel.SixMonthCandles.JsonClosingPrice)
                     }
@@ -218,13 +224,14 @@
                         type: "candlestick",
                         xValueType: "dateTime",
 		                showInLegend: true,
-                        name: "Stock Price",
+                        name: "Candles",
                         dataPoints: @Html.Raw(stockDetailsModel.OneMonthCandles.JsonCandleSticks)
                     },
                     {
                         type: "line",
                         showInLegend: true,
                         xValueType: "dateTime",
+                        name: "Closing Price",
                         dataPoints: @Html.Raw(stockDetailsModel.OneMonthCandles.JsonClosingPrice)
                     }
                 ]
@@ -262,13 +269,14 @@
                         type: "candlestick",
                         xValueType: "dateTime",
 		                showInLegend: true,
-                        name: "Stock Price",
+                        name: "Candles",
                         dataPoints: @Html.Raw(stockDetailsModel.TwoWeekCandles.JsonCandleSticks)
                     },
                     {
                         type: "line",
                         showInLegend: true,
                         xValueType: "dateTime",
+                        name: "Closing Price",
                         dataPoints: @Html.Raw(stockDetailsModel.TwoWeekCandles.JsonClosingPrice)
                     }
                 ]
@@ -282,19 +290,21 @@
         chart6.render();
 
     }
+
+
 </script>
 
 <body>
-    <div id="fullHistory" style="height: 400px; width: 100%;">
+    <div id="fullHistory" style="height: 600px; width: 100%;">
     </div>
-    <div id="fiveYear" style="height: 400px; width: 100%;">
+    <div id="fiveYear" style="height: 600px; width: 100%;">
     </div>
-    <div id="oneYear" style="height: 400px; width: 100%;">
+    <div id="oneYear" style="height: 600px; width: 100%;">
     </div>
-    <div id="sixMonth" style="height: 400px; width: 100%;">
+    <div id="sixMonth" style="height: 600px; width: 100%;">
     </div>
-    <div id="oneMonth" style="height: 400px; width: 100%;">
+    <div id="oneMonth" style="height: 600px; width: 100%;">
     </div>
-    <div id="twoWeeks" style="height: 400px; width: 100%;">
+    <div id="twoWeeks" style="height: 600px; width: 100%;">
     </div>
 </body>

@@ -10,6 +10,17 @@ namespace StockDashboard.Models
 {
     public class StockDetailsModel
     {
+        #region Major Indicators to Research & Implement
+        //(Exponential and Simple Moving Averages
+        //EMA & SMA. 200 vs 100 vs 50 vs 20. What is each measuring? how do you use these? what sample size (n) should you use for an effective result? 
+        //does it depend on the data or do you model what you think fits best based on the general price trend? how strong of an indicator is this?
+
+        //RSI (Relative Strength Indicator)
+        //Bollinger Bands. can this be implemented progamatically? whats the success rate?
+
+        //Momentum: MACD (Moving average convergence divergence)
+        //Volume: On-Balance-Volume(OBV)
+        #endregion
         public string Symbol { get; set; }
         public string CompanyName { get; set; }
         public decimal High52Weeks { get; set; }
@@ -22,6 +33,14 @@ namespace StockDashboard.Models
         public decimal MarkertCap { get; set; }
         public long TotalShares { get; set; }
         public decimal PERatio { get; set; }
+        public decimal AllTimeHigh { get; set; }
+        public decimal AllTimeLow { get; set; }
+
+        #region Realtime Info
+        //Properties that must refresh every few seconds
+        #endregion
+        public List<decimal> PercentPriceChange { get; set; }
+        public List<decimal> PercentVolumeChange { get; set; }
         public StockCandleModel TwentyYearCandles { get; set; }
         public StockCandleModel FiveYearCandles { get; set; }
         public StockCandleModel OneYearCandles { get; set; }
