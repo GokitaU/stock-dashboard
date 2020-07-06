@@ -3,14 +3,14 @@
     StockDetailsModel stockDetailsModel = Model;
 }
 
-    <div style="margin-left:auto;margin-right:auto;">
-        <h1>@(stockDetailsModel.Symbol + " - " + stockDetailsModel.CompanyName)</h1>
-    </div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.9.0/css/bootstrap-slider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.js"></script>
+
 <script type="text/javascript">
-
-
     window.onload = function () {
         var chart = new CanvasJS.Chart("fullHistory",
             {
@@ -56,7 +56,6 @@
                     }
                 ]
             });
-
         var chart2 = new CanvasJS.Chart("fiveYear",
             {
                 zoomEnabled:true,
@@ -101,7 +100,6 @@
                     }
                 ]
             });
-
         var chart3 = new CanvasJS.Chart("oneYear",
             {
                 zoomEnabled:true,
@@ -146,7 +144,6 @@
                     }
                 ]
             });
-
         var chart4 = new CanvasJS.Chart("sixMonth",
             {
                 zoomEnabled:true,
@@ -191,7 +188,6 @@
                     }
                 ]
             });
-
         var chart5 = new CanvasJS.Chart("oneMonth",
             {
                 zoomEnabled:true,
@@ -236,7 +232,6 @@
                     }
                 ]
             });
-
         var chart6 = new CanvasJS.Chart("twoWeeks",
             {
                 zoomEnabled:true,
@@ -295,16 +290,68 @@
 </script>
 
 <body>
-    <div id="fullHistory" style="height: 600px; width: 100%;">
+    <div class="container">
+        <div class="row">
+            <div style="margin-right:auto;">
+                <h1>@(stockDetailsModel.Symbol + " - " + stockDetailsModel.CompanyName)</h1>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-1">
+                <div class="row justify-content-md-center" style="height:100px">
+                </div>
+                <div class="row justify-content-md-center">
+                    <text>@stockDetailsModel.TwentyYearCandles.ViewMax</text>
+                </div>
+
+                <div id="slider-range" class="row justify-content-md-center">
+                    <input id="ex1"
+                           data-slider-id='ex1Slider'
+                           type="text"
+                           data-slider-min="@stockDetailsModel.TwentyYearCandles.ViewMin"
+                           data-slider-max="@stockDetailsModel.TwentyYearCandles.ViewMax"
+                           data-slider-step="1"
+                           data-slider-value="[@stockDetailsModel.TwentyYearCandles.ViewMin,@stockDetailsModel.TwentyYearCandles.ViewMax]"
+                           data-slider-orientation="vertical" />
+                    <script type='text/javascript'>
+                        $('#ex1').slider({
+                            value: [@stockDetailsModel.TwentyYearCandles.ViewMin,@stockDetailsModel.TwentyYearCandles.ViewMax],
+                            formatter: function (value) {
+                                return 'Current value: ' + value;
+                            }
+                        });
+                    </script>
+
+                </div>
+                <div class="row justify-content-md-center">
+                    <text>@stockDetailsModel.TwentyYearCandles.ViewMin</text>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div id="fullHistory" style="height: 600px; width:100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="fiveYear" style="height: 600px; width: 100%;">
-    </div>
-    <div id="oneYear" style="height: 600px; width: 100%;">
-    </div>
-    <div id="sixMonth" style="height: 600px; width: 100%;">
-    </div>
-    <div id="oneMonth" style="height: 600px; width: 100%;">
-    </div>
-    <div id="twoWeeks" style="height: 600px; width: 100%;">
-    </div>
+
+    @*<div id="fiveYear" style="height: 600px; width: 100%;">
+        </div>
+        <div id="oneYear" style="height: 600px; width: 100%;">
+        </div>
+        <div id="sixMonth" style="height: 600px; width: 100%;">
+        </div>
+        <div id="oneMonth" style="height: 600px; width: 100%;">
+        </div>
+        <div id="twoWeeks" style="height: 600px; width: 100%;">
+        </div>*@
 </body>
+<style>
+    #ex1Slider {
+        height: 650px;
+    }
+    #ex1Slider .slider-selection {
+        background: #BABABA;
+    }
+</style>

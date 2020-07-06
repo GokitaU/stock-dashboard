@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "+YYkmHlfzXmz9wSy7mEppLTZkQCMJZM8akzdMegm3v+ovUdqyZIqtI3TGNZ3+cHl40aUetWAJpYG8IfqquCPDw==",
+  "dgSpecHash": "hamoyw7FHYjrjZSvanRuvFRIBskmcVIhE9ZkSWj1t+VPJu5Y/sKGpBessnz7Q7Rg7BikcO5lWqJYfzDJQW5olw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Gonzalo\\Dropbox\\GitHubProjects\\stock-dashboard\\StockDashboard\\StockDashboard\\StockDashboard.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Gonzalo\\.nuget\\packages\\bootstrap-slider\\5.0.13\\bootstrap-slider.5.0.13.nupkg.sha512",
     "C:\\Users\\Gonzalo\\.nuget\\packages\\csvhelper\\7.1.1\\csvhelper.7.1.1.nupkg.sha512",
     "C:\\Users\\Gonzalo\\.nuget\\packages\\dapper\\2.0.35\\dapper.2.0.35.nupkg.sha512",
     "C:\\Users\\Gonzalo\\.nuget\\packages\\deedle\\2.2.0\\deedle.2.2.0.nupkg.sha512",

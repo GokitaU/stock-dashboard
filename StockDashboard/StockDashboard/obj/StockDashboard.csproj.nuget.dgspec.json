@@ -77,6 +77,10 @@
             "YahooFinanceApi": {
               "target": "Package",
               "version": "[2.1.2, )"
+            },
+            "bootstrap-slider": {
+              "target": "Package",
+              "version": "[5.0.13, )"
             }
           },
           "imports": [

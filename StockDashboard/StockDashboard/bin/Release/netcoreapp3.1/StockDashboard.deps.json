@@ -33,6 +33,7 @@
           "X.PagedList.Mvc.Core": "8.0.7",
           "X.PagedList.Web.Common": "8.0.7",
           "YahooFinanceApi": "2.1.2",
+          "bootstrap-slider": "5.0.13",
           "Microsoft.AspNetCore.Antiforgery.Reference": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions.Reference": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -322,6 +323,7 @@
           "StockDashboard.dll": {}
         }
       },
+      "bootstrap-slider/5.0.13": {},
       "CsvHelper/7.1.1": {
         "dependencies": {
           "Microsoft.CSharp": "4.5.0",
@@ -3789,6 +3791,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "bootstrap-slider/5.0.13": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3QLNPBs41NBC+/15jatyjHCxr7HDfa22zJCAYkFnAIfxXTPLWLRoWgs/y6yGRFU/gdQyqOFhvpQ48WhsWkJ5lw==",
+      "path": "bootstrap-slider/5.0.13",
+      "hashPath": "bootstrap-slider.5.0.13.nupkg.sha512"
     },
     "CsvHelper/7.1.1": {
       "type": "package",

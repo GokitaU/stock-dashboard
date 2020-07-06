@@ -58,7 +58,7 @@ namespace StockDashboard.Models
         public async Task InitializeStockDetails()
         {
             var BR = new BaseRepository();
-
+            
             var stockInfo = await BR.StockInfoById(SymbolId);
             Symbol = stockInfo.Symbol;
             CompanyName = stockInfo.CompanyName;
@@ -68,9 +68,12 @@ namespace StockDashboard.Models
 
             var fiveYearList = (candleData.Where(e => e.MarketDate >= candleData.Last().MarketDate.AddYears(-5))).OrderBy(e => e.MarketDate).ToList();
             FiveYearCandles = new StockCandleModel(fiveYearList);
+            
 
             var oneYearList = (candleData.Where(e => e.MarketDate >= candleData.Last().MarketDate.AddYears(-1))).OrderBy(e => e.MarketDate).ToList();
             OneYearCandles = new StockCandleModel(oneYearList);
+            High52Weeks = oneYearList.Select(e => e.Close).Max();
+            Low52Weeks = oneYearList.Select(e => e.Close).Min();
 
             var sixMonthList = (candleData.Where(e => e.MarketDate >= candleData.Last().MarketDate.AddMonths(-6))).OrderBy(e => e.MarketDate).ToList();
             SixMonthCandles = new StockCandleModel(sixMonthList);

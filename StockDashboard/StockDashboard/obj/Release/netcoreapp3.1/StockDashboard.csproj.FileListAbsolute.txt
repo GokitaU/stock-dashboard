@@ -399,7 +399,6 @@ C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDash
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Release\netcoreapp3.1\StockDashboard.csprojAssemblyReference.cache
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Release\netcoreapp3.1\StockDashboard.csproj.CoreCompileInputs.cache
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Release\netcoreapp3.1\StockDashboard.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Release\netcoreapp3.1\StockDashboard.MvcApplicationPartsAssemblyInfo.cache
@@ -427,3 +426,4 @@ C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDash
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Release\netcoreapp3.1\StockDashboard.dll
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Release\netcoreapp3.1\StockDashboard.pdb
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Release\netcoreapp3.1\StockDashboard.genruntimeconfig.cache
+C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Release\netcoreapp3.1\StockDashboard.csprojAssemblyReference.cache

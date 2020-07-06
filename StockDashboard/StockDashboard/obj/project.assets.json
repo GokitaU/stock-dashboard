@@ -2,6 +2,9 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "bootstrap-slider/5.0.13": {
+        "type": "package"
+      },
       "CsvHelper/7.1.1": {
         "type": "package",
         "dependencies": {
@@ -2666,6 +2669,19 @@
     }
   },
   "libraries": {
+    "bootstrap-slider/5.0.13": {
+      "sha512": "3QLNPBs41NBC+/15jatyjHCxr7HDfa22zJCAYkFnAIfxXTPLWLRoWgs/y6yGRFU/gdQyqOFhvpQ48WhsWkJ5lw==",
+      "type": "package",
+      "path": "bootstrap-slider/5.0.13",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bootstrap-slider.5.0.13.nupkg.sha512",
+        "bootstrap-slider.nuspec",
+        "content/css/bootstrap-slider.min.css",
+        "content/scripts/bootstrap-slider.min.js"
+      ]
+    },
     "CsvHelper/7.1.1": {
       "sha512": "15swT2vsneV4s8gk2eozKvbVe2K5PMmU/NHG/fyuiSNbgtMuzSZuo99tgM63IQMO09igY3lMB2i9NQCcZUfsJQ==",
       "type": "package",
@@ -8284,7 +8300,8 @@
       "X.PagedList >= 8.0.7",
       "X.PagedList.Mvc.Core >= 8.0.7",
       "X.PagedList.Web.Common >= 8.0.7",
-      "YahooFinanceApi >= 2.1.2"
+      "YahooFinanceApi >= 2.1.2",
+      "bootstrap-slider >= 5.0.13"
     ]
   },
   "packageFolders": {
@@ -8364,6 +8381,10 @@
           "YahooFinanceApi": {
             "target": "Package",
             "version": "[2.1.2, )"
+          },
+          "bootstrap-slider": {
+            "target": "Package",
+            "version": "[5.0.13, )"
           }
         },
         "imports": [
