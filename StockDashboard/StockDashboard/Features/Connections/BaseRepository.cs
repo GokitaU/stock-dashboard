@@ -58,7 +58,20 @@ namespace StockDashboard.Features.Connections
             }
             return stockSymbols;
         }
-        
+        public async Task<List<RootSymbolIndex>> RetryInitialProcess()
+        {
+            List<RootSymbolIndex> stockSymbols;
+            var sqlQuery = "SELECT * FROM RootSymbolIndex WHERE Id IN (SELECT SymbolId FROM InitialProcess WHERE SuccessFLag = 'N')";
+            using (IDbConnection cn = Connection)
+            {
+                cn.Open();
+                var result = await cn.QueryAsync<RootSymbolIndex>(sqlQuery);
+                cn.Close();
+                stockSymbols = result.ToList();
+            }
+            return stockSymbols;
+        }
+
         public async Task<List<RootSymbolIndex>> FindUnprocessedStocks()
         {
             List<RootSymbolIndex> stockSymbols;
@@ -214,6 +227,19 @@ namespace StockDashboard.Features.Connections
         //    return stockSymbols;
         //}
 
+        public async Task UpdateInitialProcessFlag(int symbolId, string successFlag)
+        {
+            var parameters = new DynamicParameters();
+            parameters.Add("@SymbolId", symbolId);
+            parameters.Add("@SuccessFlag", successFlag);
+            var sqlCommand = $"UPDATE InitialProcess SET SuccessFlag = @SuccessFlag WHERE SymbolId = @SymbolId";
+            using (IDbConnection cn = Connection)
+            {
+                cn.Open();
+                await cn.ExecuteAsync(sqlCommand, parameters);
+                cn.Close();
+            }
+        }
         public async Task UpdateDailyProcessDate(int symbolId, DateTime lastestDate, string successFlag)
         {
             var parameters = new DynamicParameters();
