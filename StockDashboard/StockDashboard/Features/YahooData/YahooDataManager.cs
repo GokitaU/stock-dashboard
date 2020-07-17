@@ -40,6 +40,7 @@ namespace StockDashboard.Features.YahooData
             foreach (var stock in result)
             {
                 await InitializeData(stock);
+                Thread.Sleep(1900);
             }
         }
 
@@ -48,9 +49,11 @@ namespace StockDashboard.Features.YahooData
         {
             var result = await BR.RetryInitialProcess();
             result = result.OrderBy(a => Guid.NewGuid()).ToList();
+            result = result.Where(e => e.Symbol == "XELA").ToList();
             foreach (var stock in result)
             {
                 await RetryInitializeData(stock);
+                Thread.Sleep(1900);
             }
         }
 
@@ -149,6 +152,7 @@ namespace StockDashboard.Features.YahooData
                     await BR.BulkCandleInsert(candles, item.SymbolId);
                     await BR.UpdateDailyProcessDate(item.SymbolId, GlobalDates.AvailableMarketDate, "Y");
                 }
+                Thread.Sleep(1900);
             }
         }
         public string EncodeURI(string symbol)
