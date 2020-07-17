@@ -1,4 +1,6 @@
-﻿using StockDashboard.Features.Connections;
+﻿using NLog;
+using NLog.Web;
+using StockDashboard.Features.Connections;
 using StockDashboard.Tables;
 using System;
 using System.Collections.Generic;
@@ -11,10 +13,12 @@ namespace StockDashboard.Features.YahooData
 {
     public class YahooDataManager
     {
+        public Logger Logger { get; set; }
         public BaseRepository BR { get; set; }
         public YahooDataManager()
         {
             BR = new BaseRepository();
+            Logger = NLogBuilder.ConfigureNLog("nlog.config").GetCurrentClassLogger();
         }
 
         public async void RunMethods()
@@ -49,7 +53,6 @@ namespace StockDashboard.Features.YahooData
         {
             var result = await BR.RetryInitialProcess();
             result = result.OrderBy(a => Guid.NewGuid()).ToList();
-            result = result.Where(e => e.Symbol == "XELA").ToList();
             foreach (var stock in result)
             {
                 await RetryInitializeData(stock);
