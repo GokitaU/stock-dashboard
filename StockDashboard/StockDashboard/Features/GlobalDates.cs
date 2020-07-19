@@ -18,8 +18,8 @@ namespace StockDashboard.Features
         public static void SetVariables()
         {   
             ProcessDate = DateTime.Now;
-            AvailableMarketDate = ProcessDate;
-            //AvailableMarketDate = ProcessDate.AddDays(-1);
+            //AvailableMarketDate = ProcessDate;
+            AvailableMarketDate = ProcessDate.AddDays(-1);
         }
     }
 }

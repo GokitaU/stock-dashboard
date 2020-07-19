@@ -1,10 +1,13 @@
-﻿using StockDashboard.Features.Connections;
+﻿using Newtonsoft.Json;
+using StockDashboard.Features.Connections;
 using StockDashboard.Tables;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Xml.Schema;
+using YahooFinanceApi;
 
 namespace StockDashboard.Models
 {
@@ -21,6 +24,7 @@ namespace StockDashboard.Models
         //Momentum: MACD (Moving average convergence divergence)
         //Volume: On-Balance-Volume(OBV)
         #endregion
+        public string JsonCandleData { get; set; }
         public string Symbol { get; set; }
         public string CompanyName { get; set; }
         public decimal High52Weeks { get; set; }
@@ -55,6 +59,30 @@ namespace StockDashboard.Models
         }
 
 
+        public List<StockCandle> DataToCSVString(List<DailyHistoricalPriceData> priceData)
+        {
+            //var dataString = "Date,Open,High,Low,Close,Volume,Adj Close\r\n";
+            var candles = new List<StockCandle>();
+            foreach(var item in priceData)
+            {
+                //2014-08-08,43.23,43.32,42.91,43.20,28942700,43.20
+                //var row = $"{item.MarketDate.ToString("yyyy-MM-dd")},{item.Open},{item.High},{item.Low},{item.Close},{item.Volume},{item.AdjustedClose}\r\n";
+
+                //dataString = dataString + row;
+
+
+                var candle = new StockCandle();
+                candle.AdjustedClose = item.AdjustedClose;
+                candle.Close = item.Close;
+                candle.High = item.High;
+                candle.Open = item.Open;
+                candle.Low = item.Low;
+                candle.Volume = item.Volume;
+                candle.Date = item.MarketDate;
+                candles.Add(candle);
+            }
+            return candles;
+        }
         public async Task InitializeStockDetails()
         {
             var BR = new BaseRepository();
@@ -84,6 +112,25 @@ namespace StockDashboard.Models
             var twoWeekList = (candleData.Where(e => e.MarketDate >= candleData.Last().MarketDate.AddDays(-14))).OrderBy(e => e.MarketDate).ToList();
             TwoWeekCandles = new StockCandleModel(twoWeekList);
 
+            var ttt = DataToCSVString(candleData);
+            JsonCandleData = JsonConvert.SerializeObject(ttt);
+            //JsonCandleData = DataToCSVString(candleData);
         }
+    }
+
+    public class StockCandle
+    {
+        public StockCandle()
+        {
+
+        }
+
+        public DateTime Date { get; set; }
+        public decimal Open { get; set; }
+        public decimal High { get; set; }
+        public decimal Low { get; set; }
+        public decimal Close { get; set; }
+        public long Volume { get; set; }
+        public decimal AdjustedClose { get; set; }
     }
 }
