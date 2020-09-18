@@ -25,7 +25,12 @@ namespace StockDashboard
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddHostedService<DataService>();
+            //services.AddHostedService<AlpacaDataService>();
+            //services.AddHostedService<AlpacaTradingService>();
+            //services.AddHostedService<DataService>();
+            //services.AddHostedService<SignalService>();
+            //services.AddHostedService<NotificationService>();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

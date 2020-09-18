@@ -1,5 +1,7 @@
 ﻿using Dapper;
 using Microsoft.AspNetCore.Mvc.Formatters;
+using NLog;
+using NLog.Web;
 using StockDashboard.Tables;
 using System;
 using System.Collections.Generic;
@@ -13,8 +15,75 @@ namespace StockDashboard.Features.Connections
 {
     public class BaseRepository : DbContext
     {
+        public Logger Logger = NLogBuilder.ConfigureNLog("nlog.config").GetCurrentClassLogger();
+        public async Task<SystemDefaults> GetSystemDefault(string attributeName)
+        {
+            var parameters = new DynamicParameters();
+            parameters.Add("@AttributeName", attributeName);
+            SystemDefaults index;
+            var sqlQuery = @"SELECT * FROM SystemDefaults WHERE AttributeName = @AttributeName;";
+            try
+            {
+                using (IDbConnection cn = Connection)
+                {
+                    cn.Open();
+                    var result = cn.QueryAsync<SystemDefaults>(sqlQuery, parameters).GetAwaiter().GetResult();
+                    cn.Close();
+                    index = result.FirstOrDefault();
+                }
+            }
+            catch (Exception exc)
+            {
+                index = null;
+                Logger.Info(exc.ToString());
+            }
 
+            return index;
+        }
 
+        public async Task<List<TradeNotifications>> GetTradeNotifications()
+        {
+            List<TradeNotifications> notifications;
+            var sqlQuery = "SELECT * FROM TradeNotifications";
+            using (IDbConnection cn = Connection)
+            {
+                cn.Open();
+                var result = await cn.QueryAsync<TradeNotifications>(sqlQuery);
+                cn.Close();
+                notifications = result.ToList();
+            }
+            return notifications;
+        }
+
+        public async Task<List<AppUsers>> GetAppUsers()
+        {
+            List<AppUsers> appUsers;
+            var sqlQuery = "SELECT * FROM AppUsers";
+            using (IDbConnection cn = Connection)
+            {
+                cn.Open();
+                var result = await cn.QueryAsync<AppUsers>(sqlQuery);
+                cn.Close();
+                appUsers = result.ToList();
+            }
+            return appUsers;
+        }
+
+        public async Task<List<DailyHistoricalPriceData>> LoadPercentChangeList(int SymbolId)
+        {
+            List<DailyHistoricalPriceData> stockSymbols;
+            var parameters = new DynamicParameters();
+            parameters.Add("@SymbolId", SymbolId);
+            var sqlQuery = "SELECT * FROM DailyHistoricalPriceData WHERE SymbolId = @SymbolId AND MarketDate >= (SELECT MAX(MarketDate) FROM PercentChangeData WHERE SymbolId = @SymbolId);";
+            using (IDbConnection cn = Connection)
+            {
+                cn.Open();
+                var result = await cn.QueryAsync<DailyHistoricalPriceData>(sqlQuery, parameters);
+                cn.Close();
+                stockSymbols = result.ToList();
+            }
+            return stockSymbols;
+        }
 
         public async Task<List<DailyHistoricalPriceData>> LoadCandles(int SymbolId)
         {
@@ -101,6 +170,23 @@ namespace StockDashboard.Features.Connections
             }
             return index;
         }
+
+        public async Task<List<NightlyBarsModel>> QueryNightlyBars()
+        {
+            List<NightlyBarsModel> nighlyBars;
+            var sqlQuery = @"SELECT DISTINCT (DHPD.SymbolId), MAX(DHPD.MarketDate) AS MaxDate, RSI.Symbol  
+                                FROM [DailyHistoricalPriceData] DHPD, RootSymbolIndex RSI 
+                                WHERE(DHPD.SymbolId = RSI.Id ) 
+                                GROUP BY RSI.Symbol, DHPD.SymbolId;";
+            using (IDbConnection cn = Connection)
+            {
+                cn.Open();
+                var result = await cn.QueryAsync<NightlyBarsModel>(sqlQuery);
+                cn.Close();
+                nighlyBars = result.ToList();
+            }
+            return nighlyBars;
+        }
         public async Task<List<DailyProcess>> StocksToUpdate(DateTime availableDate)
         {
             var parameters = new DynamicParameters();
@@ -155,6 +241,83 @@ namespace StockDashboard.Features.Connections
             }
         }
 
+        public DataTable ListPercentChangeToDataTable(List<PercentChangeData> data)
+        {
+            var table = new DataTable();
+            table.Columns.Add("SymbolId", typeof(int));
+            table.Columns.Add("MarketDate", typeof(DateTime));
+            table.Columns.Add("PastDate", typeof(DateTime));
+            table.Columns.Add("PercentChange", typeof(decimal));
+            table.Columns.Add("AbsoluteChange", typeof(decimal));
+            foreach (var item in data)
+            {
+                var row = new Object[]
+                {
+                    item.SymbolId,
+                    item.MarketDate,
+                    item.PastDate,
+                    item.PercentChange,
+                    item.AbsoluteChange
+                };
+                table.Rows.Add(row);
+            }
+            return table;
+        }
+        public async Task BulkPercentChangeInsert(List<PercentChangeData> data)
+        {
+            try
+            {
+                var dataTable = ListPercentChangeToDataTable(data);
+                using (SqlConnection sqlConn = SqlConnect)
+                {
+                    sqlConn.Open();
+                    using (SqlBulkCopy sqlbc = new SqlBulkCopy(sqlConn))
+                    {
+                        sqlbc.DestinationTableName = "PercentChangeData";
+                        sqlbc.ColumnMappings.Add("SymbolId", "SymbolId");
+                        sqlbc.ColumnMappings.Add("MarketDate", "MarketDate");
+                        sqlbc.ColumnMappings.Add("PastDate", "PastDate");
+                        sqlbc.ColumnMappings.Add("PercentChange", "PercentChange");
+                        sqlbc.ColumnMappings.Add("AbsoluteChange", "AbsoluteChange");
+                        await sqlbc.WriteToServerAsync(dataTable);
+                    }
+                    sqlConn.Close();
+                }
+            }
+            catch (Exception exc)
+            {
+                Logger.Info(exc.ToString());
+            }
+        }
+        public async Task BulkBarInsert(List<StockDashboard.Models.Candle> data, int symbolId)
+        {
+            try
+            {
+                var dataTable = ListBarsToDataTable(data, symbolId);
+                using (SqlConnection sqlConn = SqlConnect)
+                {
+                    sqlConn.Open();
+                    using (SqlBulkCopy sqlbc = new SqlBulkCopy(sqlConn))
+                    {
+                        sqlbc.DestinationTableName = "DailyHistoricalPriceData";
+                        sqlbc.ColumnMappings.Add("SymbolId", "SymbolId");
+                        sqlbc.ColumnMappings.Add("MarketDate", "MarketDate");
+                        sqlbc.ColumnMappings.Add("Open", "Open");
+                        sqlbc.ColumnMappings.Add("High", "High");
+                        sqlbc.ColumnMappings.Add("Low", "Low");
+                        sqlbc.ColumnMappings.Add("Close", "Close");
+                        sqlbc.ColumnMappings.Add("Volume", "Volume");
+                        sqlbc.ColumnMappings.Add("AdjustedClose", "AdjustedClose");
+                        await sqlbc.WriteToServerAsync(dataTable);
+                    }
+                    sqlConn.Close();
+                }
+            }
+            catch (Exception exc)
+            {
+
+            }
+        }
         public async Task BulkCandleInsert(List<Candle> data, int symbolId)
         {
             try
@@ -184,7 +347,34 @@ namespace StockDashboard.Features.Connections
 
             }
         }
-
+        public DataTable ListBarsToDataTable(List<StockDashboard.Models.Candle> data, int symbolId)
+        {
+            var table = new DataTable();
+            table.Columns.Add("SymbolId", typeof(int));
+            table.Columns.Add("MarketDate", typeof(DateTime));
+            table.Columns.Add("Open", typeof(decimal));
+            table.Columns.Add("High", typeof(decimal));
+            table.Columns.Add("Low", typeof(decimal));
+            table.Columns.Add("Close", typeof(decimal));
+            table.Columns.Add("Volume", typeof(long));
+            table.Columns.Add("AdjustedClose", typeof(decimal));
+            foreach (var candle in data)
+            {
+                var row = new Object[]
+                {
+                    symbolId,
+                    candle.DateTime,
+                    candle.Open,
+                    candle.High,
+                    candle.Low,
+                    candle.Close,
+                    candle.Volume,
+                    candle.AdjustedClose
+                };
+                table.Rows.Add(row);
+            }
+            return table;
+        }
         public DataTable ListToDataTable(List<Candle> data, int symbolId)
         {
             var table = new DataTable();
@@ -281,5 +471,12 @@ namespace StockDashboard.Features.Connections
             }
             return companyName;
         }
+    }
+
+    public class NightlyBarsModel 
+    { 
+        public int SymbolId { get; set; }
+        public DateTime MaxDate { get; set; }
+        public string Symbol { get; set; }
     }
 }

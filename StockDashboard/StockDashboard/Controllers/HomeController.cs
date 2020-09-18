@@ -31,7 +31,6 @@ namespace StockDashboard.Controllers
             var pagedList = symbols.ToPagedList(page ?? 1, 200);
             return View(pagedList);
         }
-
         public IActionResult Privacy()
         {
             return View();

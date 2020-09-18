@@ -1,0 +1,384 @@
+2020-09-05 03:35:20.9169||INFO|StockDashboard.Features.Connections.LoginRepository|System.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'UQ__AppUsers__101A37D58D80BDD6'. Cannot insert duplicate key in object 'dbo.AppUsers'. The duplicate key value is (VVVVVVVV).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 678
+   at StockDashboard.Features.Connections.LoginRepository.InsertNewUser(String username, String password, String email, String alpacaEnabled, String apiKey, String secretKey, String paperApiKey, String paperSecretKey) in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\Features\Connections\LoginRepository.cs:line 35
+ClientConnectionId:3dec1530-f91a-47d3-a2ec-ff50453c9515
+Error Number:2627,State:1,Class:14 
+2020-09-05 03:43:24.0389||INFO|StockDashboard.Features.Connections.LoginRepository|System.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'UQ__AppUsers__101A37D58D80BDD6'. Cannot insert duplicate key in object 'dbo.AppUsers'. The duplicate key value is ().
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 678
+   at StockDashboard.Features.Connections.LoginRepository.InsertNewUser(String username, String password, String email, String alpacaEnabled, String apiKey, String secretKey, String paperApiKey, String paperSecretKey) in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\Features\Connections\LoginRepository.cs:line 35
+ClientConnectionId:107019bf-84c9-43c3-a975-b522df7ade8f
+Error Number:2627,State:1,Class:14 
+2020-09-05 03:49:48.8819||INFO|StockDashboard.Features.Connections.LoginRepository|System.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'UQ__AppUsers__101A37D58D80BDD6'. Cannot insert duplicate key in object 'dbo.AppUsers'. The duplicate key value is ().
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 678
+   at StockDashboard.Features.Connections.LoginRepository.InsertNewUser(String username, String password, String email, String alpacaEnabled, String apiKey, String secretKey, String paperApiKey, String paperSecretKey) in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\Features\Connections\LoginRepository.cs:line 35
+ClientConnectionId:aba4664c-dea0-44cb-b986-37081ebb0274
+Error Number:2627,State:1,Class:14 
+2020-09-05 03:54:34.4161||INFO|StockDashboard.Features.Connections.LoginRepository|System.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'UQ__AppUsers__101A37D58D80BDD6'. Cannot insert duplicate key in object 'dbo.AppUsers'. The duplicate key value is ().
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 678
+   at StockDashboard.Features.Connections.LoginRepository.InsertNewUser(String username, String password, String email, String alpacaEnabled, String apiKey, String secretKey, String paperApiKey, String paperSecretKey) in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\Features\Connections\LoginRepository.cs:line 35
+ClientConnectionId:88618dd2-151f-4c3c-9c4f-887ec96da20d
+Error Number:2627,State:1,Class:14 
+2020-09-05 03:54:49.9709||INFO|StockDashboard.Features.Connections.LoginRepository|System.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'UQ__AppUsers__101A37D58D80BDD6'. Cannot insert duplicate key in object 'dbo.AppUsers'. The duplicate key value is ().
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 678
+   at StockDashboard.Features.Connections.LoginRepository.InsertNewUser(String username, String password, String email, String alpacaEnabled, String apiKey, String secretKey, String paperApiKey, String paperSecretKey) in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\Features\Connections\LoginRepository.cs:line 35
+ClientConnectionId:88618dd2-151f-4c3c-9c4f-887ec96da20d
+Error Number:2627,State:1,Class:14 
+2020-09-05 04:10:05.6175||INFO|StockDashboard.Features.Connections.LoginRepository|System.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'UQ__AppUsers__101A37D58D80BDD6'. Cannot insert duplicate key in object 'dbo.AppUsers'. The duplicate key value is ().
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 678
+   at StockDashboard.Features.Connections.LoginRepository.InsertNewUser(String username, String password, String email, String alpacaEnabled, String apiKey, String secretKey, String paperApiKey, String paperSecretKey) in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\Features\Connections\LoginRepository.cs:line 35
+ClientConnectionId:f20d4023-2b65-4e3f-adb4-e28d6efa90e5
+Error Number:2627,State:1,Class:14 
+2020-09-05 04:10:15.3820||INFO|StockDashboard.Features.Connections.LoginRepository|System.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'UQ__AppUsers__101A37D58D80BDD6'. Cannot insert duplicate key in object 'dbo.AppUsers'. The duplicate key value is ().
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 678
+   at StockDashboard.Features.Connections.LoginRepository.InsertNewUser(String username, String password, String email, String alpacaEnabled, String apiKey, String secretKey, String paperApiKey, String paperSecretKey) in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\Features\Connections\LoginRepository.cs:line 35
+ClientConnectionId:f20d4023-2b65-4e3f-adb4-e28d6efa90e5
+Error Number:2627,State:1,Class:14 
+2020-09-05 04:21:41.8281||INFO|StockDashboard.Features.Connections.LoginRepository|System.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'UQ__AppUsers__101A37D58D80BDD6'. Cannot insert duplicate key in object 'dbo.AppUsers'. The duplicate key value is (VVVVVVVV).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 678
+   at StockDashboard.Features.Connections.LoginRepository.InsertNewUser(String username, String password, String email, String alpacaEnabled, String apiKey, String secretKey, String paperApiKey, String paperSecretKey) in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\Features\Connections\LoginRepository.cs:line 35
+ClientConnectionId:60b8b678-0062-4016-917e-7c97047b4bee
+Error Number:2627,State:1,Class:14 
+2020-09-05 04:22:24.4088||INFO|StockDashboard.Features.Connections.LoginRepository|System.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'UQ__AppUsers__101A37D58D80BDD6'. Cannot insert duplicate key in object 'dbo.AppUsers'. The duplicate key value is (VVVVVVVV).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 678
+   at StockDashboard.Features.Connections.LoginRepository.InsertNewUser(String username, String password, String email, String alpacaEnabled, String apiKey, String secretKey, String paperApiKey, String paperSecretKey) in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\Features\Connections\LoginRepository.cs:line 35
+ClientConnectionId:32853f50-765d-4001-a18d-58e8a9099355
+Error Number:2627,State:1,Class:14 
+2020-09-05 04:24:01.6940||INFO|StockDashboard.Features.Connections.LoginRepository|System.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'UQ__AppUsers__101A37D58D80BDD6'. Cannot insert duplicate key in object 'dbo.AppUsers'. The duplicate key value is ().
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 678
+   at StockDashboard.Features.Connections.LoginRepository.InsertNewUser(String username, String password, String email, String alpacaEnabled, String apiKey, String secretKey, String paperApiKey, String paperSecretKey) in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\Features\Connections\LoginRepository.cs:line 35
+ClientConnectionId:32853f50-765d-4001-a18d-58e8a9099355
+Error Number:2627,State:1,Class:14 
+2020-09-05 04:25:44.6440||INFO|StockDashboard.Features.Connections.LoginRepository|System.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'UQ__AppUsers__101A37D58D80BDD6'. Cannot insert duplicate key in object 'dbo.AppUsers'. The duplicate key value is ().
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 678
+   at StockDashboard.Features.Connections.LoginRepository.InsertNewUser(String username, String password, String email, String alpacaEnabled, String apiKey, String secretKey, String paperApiKey, String paperSecretKey) in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\Features\Connections\LoginRepository.cs:line 35
+ClientConnectionId:32853f50-765d-4001-a18d-58e8a9099355
+Error Number:2627,State:1,Class:14 
+2020-09-05 04:26:12.8554||INFO|StockDashboard.Features.Connections.LoginRepository|System.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'UQ__AppUsers__101A37D58D80BDD6'. Cannot insert duplicate key in object 'dbo.AppUsers'. The duplicate key value is ().
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 678
+   at StockDashboard.Features.Connections.LoginRepository.InsertNewUser(String username, String password, String email, String alpacaEnabled, String apiKey, String secretKey, String paperApiKey, String paperSecretKey) in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\Features\Connections\LoginRepository.cs:line 35
+ClientConnectionId:32853f50-765d-4001-a18d-58e8a9099355
+Error Number:2627,State:1,Class:14 
+2020-09-05 04:29:21.8618||INFO|StockDashboard.Features.Connections.LoginRepository|System.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'UQ__AppUsers__5F9A11B56894FF8C'. Cannot insert duplicate key in object 'dbo.AppUsers'. The duplicate key value is (ASDFASDFA).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 678
+   at StockDashboard.Features.Connections.LoginRepository.InsertNewUser(String username, String password, String email, String alpacaEnabled, String apiKey, String secretKey, String paperApiKey, String paperSecretKey) in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\Features\Connections\LoginRepository.cs:line 35
+ClientConnectionId:53115679-c2c8-4d74-af20-b3a829c96fe2
+Error Number:2627,State:1,Class:14 
+2020-09-05 04:29:24.5557||INFO|StockDashboard.Features.Connections.LoginRepository|System.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'UQ__AppUsers__101A37D58D80BDD6'. Cannot insert duplicate key in object 'dbo.AppUsers'. The duplicate key value is ().
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 678
+   at StockDashboard.Features.Connections.LoginRepository.InsertNewUser(String username, String password, String email, String alpacaEnabled, String apiKey, String secretKey, String paperApiKey, String paperSecretKey) in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\Features\Connections\LoginRepository.cs:line 35
+ClientConnectionId:53115679-c2c8-4d74-af20-b3a829c96fe2
+Error Number:2627,State:1,Class:14 
+2020-09-05 04:29:33.9012||INFO|StockDashboard.Features.Connections.LoginRepository|System.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'UQ__AppUsers__5F9A11B56894FF8C'. Cannot insert duplicate key in object 'dbo.AppUsers'. The duplicate key value is (ASDFASDFA).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 678
+   at StockDashboard.Features.Connections.LoginRepository.InsertNewUser(String username, String password, String email, String alpacaEnabled, String apiKey, String secretKey, String paperApiKey, String paperSecretKey) in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\Features\Connections\LoginRepository.cs:line 35
+ClientConnectionId:53115679-c2c8-4d74-af20-b3a829c96fe2
+Error Number:2627,State:1,Class:14 
+2020-09-05 04:29:42.7142||INFO|StockDashboard.Features.Connections.LoginRepository|System.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'UQ__AppUsers__101A37D58D80BDD6'. Cannot insert duplicate key in object 'dbo.AppUsers'. The duplicate key value is ().
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 678
+   at StockDashboard.Features.Connections.LoginRepository.InsertNewUser(String username, String password, String email, String alpacaEnabled, String apiKey, String secretKey, String paperApiKey, String paperSecretKey) in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\Features\Connections\LoginRepository.cs:line 35
+ClientConnectionId:53115679-c2c8-4d74-af20-b3a829c96fe2
+Error Number:2627,State:1,Class:14 
+2020-09-05 04:29:45.3932||INFO|StockDashboard.Features.Connections.LoginRepository|System.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'UQ__AppUsers__101A37D58D80BDD6'. Cannot insert duplicate key in object 'dbo.AppUsers'. The duplicate key value is ().
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 678
+   at StockDashboard.Features.Connections.LoginRepository.InsertNewUser(String username, String password, String email, String alpacaEnabled, String apiKey, String secretKey, String paperApiKey, String paperSecretKey) in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\Features\Connections\LoginRepository.cs:line 35
+ClientConnectionId:53115679-c2c8-4d74-af20-b3a829c96fe2
+Error Number:2627,State:1,Class:14 
+2020-09-05 04:29:47.5478||INFO|StockDashboard.Features.Connections.LoginRepository|System.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'UQ__AppUsers__101A37D58D80BDD6'. Cannot insert duplicate key in object 'dbo.AppUsers'. The duplicate key value is ().
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 678
+   at StockDashboard.Features.Connections.LoginRepository.InsertNewUser(String username, String password, String email, String alpacaEnabled, String apiKey, String secretKey, String paperApiKey, String paperSecretKey) in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\Features\Connections\LoginRepository.cs:line 35
+ClientConnectionId:53115679-c2c8-4d74-af20-b3a829c96fe2
+Error Number:2627,State:1,Class:14 
+2020-09-05 04:29:51.3778||INFO|StockDashboard.Features.Connections.LoginRepository|System.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'UQ__AppUsers__101A37D58D80BDD6'. Cannot insert duplicate key in object 'dbo.AppUsers'. The duplicate key value is ().
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 678
+   at StockDashboard.Features.Connections.LoginRepository.InsertNewUser(String username, String password, String email, String alpacaEnabled, String apiKey, String secretKey, String paperApiKey, String paperSecretKey) in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\Features\Connections\LoginRepository.cs:line 35
+ClientConnectionId:53115679-c2c8-4d74-af20-b3a829c96fe2
+Error Number:2627,State:1,Class:14 
+2020-09-05 04:30:01.3079||INFO|StockDashboard.Features.Connections.LoginRepository|System.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'UQ__AppUsers__A4E6E186543D83A4'. Cannot insert duplicate key in object 'dbo.AppUsers'. The duplicate key value is (AAAAAAA).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 678
+   at StockDashboard.Features.Connections.LoginRepository.InsertNewUser(String username, String password, String email, String alpacaEnabled, String apiKey, String secretKey, String paperApiKey, String paperSecretKey) in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\Features\Connections\LoginRepository.cs:line 35
+ClientConnectionId:53115679-c2c8-4d74-af20-b3a829c96fe2
+Error Number:2627,State:1,Class:14 
+2020-09-05 04:30:46.0836||INFO|StockDashboard.Features.Connections.LoginRepository|System.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'UQ__AppUsers__101A37D58D80BDD6'. Cannot insert duplicate key in object 'dbo.AppUsers'. The duplicate key value is ().
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 678
+   at StockDashboard.Features.Connections.LoginRepository.InsertNewUser(String username, String password, String email, String alpacaEnabled, String apiKey, String secretKey, String paperApiKey, String paperSecretKey) in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\Features\Connections\LoginRepository.cs:line 35
+ClientConnectionId:53115679-c2c8-4d74-af20-b3a829c96fe2
+Error Number:2627,State:1,Class:14 
+2020-09-05 04:32:54.2314||INFO|StockDashboard.Features.Connections.LoginRepository|System.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'UQ__AppUsers__101A37D58D80BDD6'. Cannot insert duplicate key in object 'dbo.AppUsers'. The duplicate key value is ().
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 678
+   at StockDashboard.Features.Connections.LoginRepository.InsertNewUser(String username, String password, String email, String alpacaEnabled, String apiKey, String secretKey, String paperApiKey, String paperSecretKey) in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\Features\Connections\LoginRepository.cs:line 35
+ClientConnectionId:0c2301c9-cd86-4c8d-8c44-e0135df8c751
+Error Number:2627,State:1,Class:14 
+2020-09-05 04:33:48.2135||INFO|StockDashboard.Features.Connections.LoginRepository|System.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'UQ__AppUsers__5F9A11B56894FF8C'. Cannot insert duplicate key in object 'dbo.AppUsers'. The duplicate key value is (RRRRRRRR).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 678
+   at StockDashboard.Features.Connections.LoginRepository.InsertNewUser(String username, String password, String email, String alpacaEnabled, String apiKey, String secretKey, String paperApiKey, String paperSecretKey) in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\Features\Connections\LoginRepository.cs:line 35
+ClientConnectionId:0c2301c9-cd86-4c8d-8c44-e0135df8c751
+Error Number:2627,State:1,Class:14 
+2020-09-05 04:36:06.4030||INFO|StockDashboard.Features.Connections.LoginRepository|System.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'UQ__AppUsers__A9D1053451955120'. Cannot insert duplicate key in object 'dbo.AppUsers'. The duplicate key value is (ASDFASDFA).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 678
+   at StockDashboard.Features.Connections.LoginRepository.InsertNewUser(String username, String password, String email, String alpacaEnabled, String apiKey, String secretKey, String paperApiKey, String paperSecretKey) in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\Features\Connections\LoginRepository.cs:line 35
+ClientConnectionId:40531883-1384-4e2e-8afe-286b1e82cbb0
+Error Number:2627,State:1,Class:14 

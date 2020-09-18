@@ -2,6 +2,7 @@ C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDash
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\appsettings.json
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\StockDashboard.exe
+C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\StockDashboard.deps.json
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\StockDashboard.runtimeconfig.json
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\StockDashboard.runtimeconfig.dev.json
@@ -290,6 +291,7 @@ C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDash
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\refs\WindowsBase.dll
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\StockDashboard.Views.dll
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\StockDashboard.Views.pdb
+C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\Alpaca.Markets.dll
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\CsvHelper.dll
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\Dapper.dll
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\Deedle.dll
@@ -316,7 +318,11 @@ C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDash
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\NLog.dll
+C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\NLog.Extensions.Logging.dll
+C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\NLog.Web.AspNetCore.dll
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\SuperSocket.ClientEngine.dll
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\System.Composition.AttributedModel.dll
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\System.Composition.Convention.dll
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\System.Composition.Hosting.dll
@@ -324,6 +330,7 @@ C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDash
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\System.Composition.TypedParts.dll
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\System.Data.SqlClient.dll
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\System.Text.Json.dll
+C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\WebSocket4Net.dll
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\X.PagedList.dll
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\X.PagedList.Mvc.Core.dll
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\X.PagedList.Web.Common.dll
@@ -399,6 +406,9 @@ C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDash
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Release\netcoreapp3.1\StockDashboard.csproj.CoreCompileInputs.cache
+C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Release\netcoreapp3.1\StockDashboard.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Release\netcoreapp3.1\StockDashboard.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Release\netcoreapp3.1\StockDashboard.RazorAssemblyInfo.cache
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Release\netcoreapp3.1\StockDashboard.RazorAssemblyInfo.cs
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Release\netcoreapp3.1\StockDashboard.AssemblyInfoInputs.cache
@@ -409,6 +419,8 @@ C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDash
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Release\netcoreapp3.1\Razor\Views\Details\Details.cshtml.g.cs
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Release\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Release\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Release\netcoreapp3.1\Razor\Views\Login\Login.cshtml.g.cs
+C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Release\netcoreapp3.1\Razor\Views\Login\Register.cshtml.g.cs
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Release\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Release\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Release\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -423,14 +435,4 @@ C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDash
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Release\netcoreapp3.1\StockDashboard.dll
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Release\netcoreapp3.1\StockDashboard.pdb
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Release\netcoreapp3.1\StockDashboard.genruntimeconfig.cache
-C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\Alpaca.Markets.dll
-C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\SuperSocket.ClientEngine.dll
-C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\WebSocket4Net.dll
 C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Release\netcoreapp3.1\StockDashboard.csprojAssemblyReference.cache
-C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config
-C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\NLog.dll
-C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\NLog.Extensions.Logging.dll
-C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\NLog.Web.AspNetCore.dll
-C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Release\netcoreapp3.1\StockDashboard.csproj.CoreCompileInputs.cache
-C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Release\netcoreapp3.1\StockDashboard.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\obj\Release\netcoreapp3.1\StockDashboard.MvcApplicationPartsAssemblyInfo.cache

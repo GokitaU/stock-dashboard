@@ -10,6 +10,8 @@
 <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
 <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
 <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/frozen.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/dark.js"></script>
 
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.js"></script>
@@ -19,24 +21,33 @@
         // Themes begin
         am4core.useTheme(am4themes_animated);
         // Themes end
-
+        var x = am4charts.XYChart;
+        x.skipEmptyPeriods = true;
+        x.equalSpacing = true;
+        //x.categoryAxesSettings.equalSpacing = true;
         // Create chart
-        var chart = am4core.create("chartdiv", am4charts.XYChart);
+        var chart = am4core.create("chartdiv", x);
+        //am4charts.categoryAxesSettings
+        //chart.categoryAxesSettings = ;
+        //chart.categoryAxesSettings.equalSpacing = true;
         chart.data = @Html.Raw(stockDetailsModel.JsonCandleData);
+        //chart.categoryAxesSettings.equalSpacing = true;
         chart.padding(0, 15, 0, 15);
         // Load data
         //chart.dataSource.url = "stockDetailsModel.JsonCandleData";
         //chart.dataSource.parser = new am4core.JSONParser();
         //chart.dataSource.parser.options.useColumnNames = true;
         //chart.dataSource.parser.options.reverse = true;
-
+        
         // the following line makes value axes to be arranged vertically.
         chart.leftAxesContainer.layout = "vertical";
-
+        //chart.xAxes.skipEmptyPeriods = true;
         // uncomment this line if you want to change order of axes
         //chart.bottomAxesContainer.reverseOrder = true;
-
+        
         var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
+        
+        dateAxis.skipEmptyPeriods = true;
         dateAxis.renderer.grid.template.location = 0;
         dateAxis.renderer.ticks.template.length = 8;
         dateAxis.renderer.ticks.template.strokeOpacity = 0.1;
@@ -47,7 +58,6 @@
         dateAxis.renderer.maxLabelPosition = 0.99;
         dateAxis.keepSelection = true;
         dateAxis.minHeight = 30;
-
         dateAxis.groupData = true;
         dateAxis.minZoomCount = 5;
 
@@ -56,6 +66,7 @@
         // dateAxis.keepSelection = true;
 
         var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+        valueAxis.skipEmptyPeriods = true;
         valueAxis.tooltip.disabled = true;
         valueAxis.zIndex = 1;
         valueAxis.renderer.baseGrid.disabled = true;
@@ -72,6 +83,7 @@
         valueAxis.renderer.fontSize = "0.8em"
 
         var series = chart.series.push(new am4charts.CandlestickSeries());
+        series.skipEmptyPeriods = true;
         series.dataFields.dateX = "Date";
         series.dataFields.openValueY = "Open";
         series.dataFields.valueY = "Close";
@@ -83,6 +95,7 @@
         series.defaultState.transitionDuration = 0;
 
         var valueAxis2 = chart.yAxes.push(new am4charts.ValueAxis());
+        valueAxis2.skipEmptyPeriods = true;
         valueAxis2.tooltip.disabled = true;
         // height of axis
         valueAxis2.height = am4core.percent(35);
@@ -100,6 +113,7 @@
         valueAxis2.renderer.gridContainer.background.fillOpacity = 0.05;
 
         var series2 = chart.series.push(new am4charts.ColumnSeries());
+        series2.skipEmptyPeriods = true
         series2.dataFields.dateX = "Date";
         series2.clustered = false;
         series2.dataFields.valueY = "Volume";
@@ -115,6 +129,7 @@
         var scrollbarX = new am4charts.XYChartScrollbar();
 
         var sbSeries = chart.series.push(new am4charts.LineSeries());
+        sbSeries.skipEmptyPeriods = true;
         sbSeries.dataFields.valueY = "Close";
         sbSeries.dataFields.dateX = "Date";
         scrollbarX.series.push(sbSeries);
@@ -512,60 +527,36 @@
                 <h1>@(stockDetailsModel.Symbol + " - " + stockDetailsModel.CompanyName)</h1>
             </div>
         </div>
-        <div class="row justify-content-md-center">
-            <div class="col-1">
-                <div class="row justify-content-md-center" style="height:100px">
-                </div>
-                <div class="row justify-content-md-center">
-                    <text>@stockDetailsModel.TwentyYearCandles.ViewMax</text>
-                </div>
 
-                <div id="slider-range" class="row justify-content-md-center">
-                    <input id="ex1"
-                           data-slider-id='ex1Slider'
-                           type="text"
-                           data-slider-min="@stockDetailsModel.TwentyYearCandles.ViewMin"
-                           data-slider-max="@stockDetailsModel.TwentyYearCandles.ViewMax"
-                           data-slider-step="1"
-                           data-slider-value="[@stockDetailsModel.TwentyYearCandles.ViewMin,@stockDetailsModel.TwentyYearCandles.ViewMax]"
-                           data-slider-orientation="vertical" />
-                    <script type='text/javascript'>
-                        $('#ex1').slider({
-                            value: [@stockDetailsModel.TwentyYearCandles.ViewMin,@stockDetailsModel.TwentyYearCandles.ViewMax],
-                            formatter: function (value) {
-                                return 'Current value: ' + value;
-                            }
-                        });
-                    </script>
 
-                </div>
-                <div class="row justify-content-md-center">
-                    <text>@stockDetailsModel.TwentyYearCandles.ViewMin</text>
-                </div>
+        <!-- HTML -->
+        <div class="row">
+            <div class="column"></div>
+            <div class="column"></div>
+        </div>
+
+
+        <div id="controls" style="width: 100%; overflow: hidden;">
+            <div style="float: left; margin-left: 1px;" class="row">
+                <div class="column"><b> &nbsp; From: &nbsp; </b></div>
+                <div class="column"> <input type="text" class="form-control" id="fromfield" /></div>
+                <div class="column"><b> &nbsp; To: &nbsp; </b></div>
+                <div class="column"> <input type="text" id="tofield" class="form-control" /></div>
+
+
             </div>
-            <div class="col">
-                @*<div>
-                        <div id="fullHistory" style="height: 600px; width:100%;">
-                        </div>
-                    </div>*@
-                <!-- HTML -->
-                <div id="controls" style="width: 100%; overflow: hidden;">
-                    <div style="float: left; margin-left: 10px;">
-                        From: <input type="text" id="fromfield"  /> To: <input type="text" id="tofield" />
-
-                    </div>
-                    <div style="float: right; margin-right: 15px;">
-                        <button id="b1m" class="btn btn-primary">1m</button>
-                        <button id="b3m" class="btn btn-primary">3m</button>
-                        <button id="b6m" class="btn btn-primary">6m</button>
-                        <button id="b1y" class="btn btn-primary">1y</button>
-                        <button id="bytd" class="btn btn-primary">YTD</button>
-                        <button id="bmax" class="btn btn-primary">MAX</button>
-                    </div>
-                </div>
-                <div id="chartdiv"></div>
+            <div style="float: right; margin-right: 15px;">
+                <button id="b1m" class="btn btn-primary">1m</button>
+                <button id="b3m" class="btn btn-primary">3m</button>
+                <button id="b6m" class="btn btn-primary">6m</button>
+                <button id="b1y" class="btn btn-primary">1y</button>
+                <button id="bytd" class="btn btn-primary">YTD</button>
+                <button id="bmax" class="btn btn-primary">MAX</button>
             </div>
         </div>
+        <div id="chartdiv"></div>
+
+
     </div>
 
     @*<div id="fiveYear" style="height: 600px; width: 100%;">
@@ -582,7 +573,7 @@
 <style>
     #chartdiv {
         width: 100%;
-        height: 800px;
+        height: 720px;
         max-width: 100%;
     }
 </style>
