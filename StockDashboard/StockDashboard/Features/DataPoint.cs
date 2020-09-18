@@ -14,7 +14,7 @@ namespace StockDashboard.Features
 			this.X = x;
 			this.Y = y;
 		}
-
+		//Hello
 		//Explicitly setting the name to be used while serializing to JSON.
 		[DataMember(Name = "label")]
 		public dynamic X = null;

@@ -14,8 +14,6 @@ namespace StockDashboard
     {
         public async static Task Main(string[] args)
         {
-            var manager = new YahooDataManager();
-            await manager.RunMethods();
             CreateHostBuilder(args).Build().Run();
         }
 

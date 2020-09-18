@@ -11,10 +11,14 @@ namespace StockDashboard.Features
         public static DateTime ProcessDate { get; set; }
         public static DateTime AvailableMarketDate { get; set; }
 
-        public static void SetVariables()
+        static GlobalDates()
         {
             StartupTime = DateTime.Now;
+        }
+        public static void SetVariables()
+        {   
             ProcessDate = DateTime.Now;
+            //AvailableMarketDate = ProcessDate;
             AvailableMarketDate = ProcessDate.AddDays(-1);
         }
     }
