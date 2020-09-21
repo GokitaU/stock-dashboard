@@ -69,6 +69,59 @@ namespace StockDashboard.Features.Connections
             return appUsers;
         }
 
+        public async Task<List<ChangeDataReport>> LoadTopDailyLosers(DateTime marketDate)
+        {
+            List<ChangeDataReport> stockSymbols;
+            try
+            {
+                var parameters = new DynamicParameters();
+                parameters.Add("@MarketDate", marketDate);
+                var sqlQuery = @"SELECT TOP(250) RSI.Id, RSI.Symbol, PCD.PercentChange, RSI.CompanyName, PCD.AbsoluteChange, PCD.MarketDate 
+                         FROM RootSymbolIndex RSI, PercentChangeData PCD 
+                         WHERE PCD.MarketDate = @MarketDate AND PCD.SymbolId = RSI.ID 
+                         Order By PercentChange Asc;";
+                using (IDbConnection cn = Connection)
+                {
+                    cn.Open();
+                    var result = await cn.QueryAsync<ChangeDataReport>(sqlQuery, parameters);
+                    cn.Close();
+                    stockSymbols = result.ToList();
+                }
+                return stockSymbols;
+            }
+            catch (Exception exc)
+            {
+                stockSymbols = new List<ChangeDataReport>();
+                return stockSymbols;
+            } 
+        }
+
+        public async Task<List<ChangeDataReport>> LoadTopDailyGainers(DateTime marketDate)
+        {
+            List<ChangeDataReport> stockSymbols;
+            try
+            {
+                var parameters = new DynamicParameters();
+                parameters.Add("@MarketDate", marketDate);              
+                var sqlQuery = @"SELECT TOP(250) RSI.Id, RSI.Symbol, PCD.PercentChange, RSI.CompanyName, PCD.AbsoluteChange, PCD.MarketDate 
+                         FROM RootSymbolIndex RSI, PercentChangeData PCD 
+                         WHERE PCD.MarketDate = @MarketDate AND PCD.SymbolId = RSI.ID 
+                         Order By PercentChange Desc;";
+                using (IDbConnection cn = Connection)
+                {
+                    cn.Open();
+                    var result = await cn.QueryAsync<ChangeDataReport>(sqlQuery, parameters);
+                    cn.Close();
+                    stockSymbols = result.ToList();
+                }
+                return stockSymbols;
+            }
+            catch (Exception exc)
+            {
+                stockSymbols = new List<ChangeDataReport>();
+                return stockSymbols;
+            }          
+        }
         public async Task<List<DailyHistoricalPriceData>> LoadPercentChangeList(int SymbolId)
         {
             List<DailyHistoricalPriceData> stockSymbols;
@@ -315,7 +368,7 @@ namespace StockDashboard.Features.Connections
             }
             catch (Exception exc)
             {
-
+                Logger.Info(exc.ToString());
             }
         }
         public async Task BulkCandleInsert(List<Candle> data, int symbolId)
@@ -478,5 +531,15 @@ namespace StockDashboard.Features.Connections
         public int SymbolId { get; set; }
         public DateTime MaxDate { get; set; }
         public string Symbol { get; set; }
+    }
+
+    public class ChangeDataReport
+    {
+        public int Id { get; set; }
+        public string Symbol { get; set; }
+        public decimal PercentChange { get; set; }
+        public string CompanyName { get; set; }
+        public decimal AbsoluteChange { get; set; }
+        public DateTime MarketDate { get; set; }
     }
 }

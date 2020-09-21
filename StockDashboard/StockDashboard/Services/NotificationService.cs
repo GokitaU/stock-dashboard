@@ -1,4 +1,5 @@
 ﻿using StockDashboard.Features.Alpaca;
+using StockDashboard.Features.Reports;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,9 @@ namespace StockDashboard.Services
 {
     public class NotificationService : BackgroundService
     {
-        private PriceNotificationManager Manager = new PriceNotificationManager();
+        //DailyReportsManager
+        //private PriceNotificationManager Manager = new PriceNotificationManager();
+        private DailyReportsManager Manager = new DailyReportsManager();
         //https://medium.com/@daniel.sagita/backgroundservice-for-a-long-running-work-3debe8f8d25b
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {

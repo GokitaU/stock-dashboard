@@ -18,6 +18,6 @@ namespace StockDashboard.Tables
 		public string? PaperSecretKey { get; set; }
 		public string? EnableLiveTrading { get; set; }
 		public string? EnablePaperTrading { get; set; }
-
-    }
+		public string? EnableDailyReports { get; set; }
+	}
 }

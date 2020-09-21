@@ -25,11 +25,11 @@ namespace StockDashboard
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            //services.AddHostedService<AlpacaDataService>();
+            services.AddHostedService<AlpacaDataService>();
             //services.AddHostedService<AlpacaTradingService>();
             //services.AddHostedService<DataService>();
-            //services.AddHostedService<SignalService>();
-            //services.AddHostedService<NotificationService>();
+            services.AddHostedService<SignalService>();
+            services.AddHostedService<NotificationService>();
             
         }
 

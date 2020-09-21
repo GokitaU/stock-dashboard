@@ -26,7 +26,7 @@ namespace StockDashboard.Features.Technicals
 
         public async Task ServiceInitializer()
         {
-            
+            //await ProcessDailyChange();
             while (true)
             {
                 var currentTime = DateTime.Now;

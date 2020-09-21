@@ -75,6 +75,8 @@ namespace StockDashboard.Features.Alpaca
                 limit = 1000;
             }
             var queryParams = new BarSetRequest(stocks.Select(e => e.Symbol), TimeFrame.Day) { Limit = limit };
+            //var queryParams = new BarSetRequest("AAPL",TimeFrame.Day) { Limit = 30 };
+            
             try
             {
                 var bars = await alpacaDataClient.GetBarSetAsync(queryParams);
@@ -83,7 +85,8 @@ namespace StockDashboard.Features.Alpaca
                     var date = stocks.Where(e => e.Symbol == candles.Key).Select(e => e.MaxDate).FirstOrDefault();
                     var symbolId = stocks.Where(e => e.Symbol == candles.Key).Select(e => e.SymbolId).FirstOrDefault();
                     var barsToInsert = candles.Value.Where(e => e.Time.Date  > date.Date).ToList();
-                    if(barsToInsert.Count > 0)
+                    barsToInsert = barsToInsert.Where(e => e.Time.TimeOfDay == TimeSpan.FromHours(4)).ToList();
+                    if (barsToInsert.Count > 0)
                     {
                         await InsertStockBars(barsToInsert, symbolId);
                     }                 
@@ -91,7 +94,7 @@ namespace StockDashboard.Features.Alpaca
             }
             catch (Exception exc)
             {
-
+                Logger.Info(exc.ToString());
             }
         }
         public static IEnumerable<List<T>> SplitList<T>(List<T> locations, int nSize = 30)

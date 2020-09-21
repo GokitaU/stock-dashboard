@@ -18,7 +18,14 @@ namespace StockDashboard.Services
             //Do your preparation (e.g. Start code) here
             while (!stoppingToken.IsCancellationRequested)
             {
-                await DataManager.StartService();
+
+
+                await Task.Run(async () =>
+                {
+                    await DataManager.StartService();
+                });
+
+                //await DataManager.StartService();
                 //await Task.Run (() =>{ DataManager.StartService(); });
                 //var xxx = 900;
             }

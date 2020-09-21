@@ -8,7 +8,10 @@ using StockDashboard.Tables;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -32,11 +35,50 @@ namespace StockDashboard.Features.Alpaca
             EmailEngine = new EmailEngine();
         }
 
+        public async Task TestMethod()
+        {
+            var emails = new List<string>();
+            emails.Add("gonzalo.zg.19@gmail.com");
+            emails.Add("gonzalozepeda19@gmail.com");
+            // ''
+            await EmailEngine.SendEmailBatch(emails, "Test Email Body", "Test Email Subject");
+        }
 
         public async Task StartService()
         {
+            await TestMethod();
+            await HttpGetResponse();
             await Start();
-            var xx = Startup.Configuration.GetConnectionString("SqlStockProject");
+        }
+
+        static async Task<string> HttpGetResponse()
+        {
+            WebRequest request = WebRequest.Create("https://finance.yahoo.com/quote/AAPL?p=AAPL");
+            //request.Headers.Add("cookie", "some_cookie");
+            string responseData;
+            Stream objStream = request.GetResponse().GetResponseStream();
+            StreamReader objReader = new StreamReader(objStream);
+            //string sLine = "";
+            //int i = 0;
+            //while (sLine != null)
+            //{
+            //    i++;
+            //    sLine = objReader.ReadLine();
+            //    if (sLine != null)
+            //        Console.WriteLine(sLine);
+            //}
+
+            using (var client = new HttpClient())
+            {
+                //client.DefaultRequestHeaders.Add("cookie", "some_cookie");
+                using (var response = await client.GetAsync("https://finance.yahoo.com/quote/AAPL?p=AAPL"))
+                {
+                    responseData = await response.Content.ReadAsStringAsync();
+                    Console.WriteLine(responseData);
+                }
+            }
+
+            return responseData;
         }
 
         public void CheckRefreshResults(ConcurrentDictionary<string, IAgg> results)

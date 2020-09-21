@@ -5742,3 +5742,707 @@
 2020-09-17 21:06:58.7264 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
 2020-09-17 21:06:58.7414 Info Closing old configuration.
 2020-09-17 21:06:58.7414 Info Found 22 configuration items
+2020-09-17 22:04:30.7576 Info Message Template Auto Format enabled
+2020-09-17 22:04:30.7576 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-17 22:04:30.8304 Info Adding target FileTarget(Name=alldata)
+2020-09-17 22:04:30.8432 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-17 22:04:30.8651 Info Found 22 configuration items
+2020-09-17 22:04:30.9084 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-17 22:04:30.9185 Info Message Template Auto Format enabled
+2020-09-17 22:04:30.9185 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-17 22:04:30.9325 Info Adding target FileTarget(Name=alldata)
+2020-09-17 22:04:30.9325 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-17 22:04:30.9450 Info Closing old configuration.
+2020-09-17 22:04:30.9727 Info Found 22 configuration items
+2020-09-17 22:04:30.9797 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-17 22:04:30.9797 Info Message Template Auto Format enabled
+2020-09-17 22:04:30.9919 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-17 22:04:30.9919 Info Adding target FileTarget(Name=alldata)
+2020-09-17 22:04:30.9919 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-17 22:04:31.0089 Info Closing old configuration.
+2020-09-17 22:04:31.0089 Info Found 22 configuration items
+2020-09-17 22:04:38.0287 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-17 22:04:38.0287 Info Message Template Auto Format enabled
+2020-09-17 22:04:38.0393 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-17 22:04:38.0393 Info Adding target FileTarget(Name=alldata)
+2020-09-17 22:04:38.0393 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-17 22:04:38.0588 Info Closing old configuration.
+2020-09-17 22:04:38.0588 Info Found 22 configuration items
+2020-09-17 22:05:51.7392 Info Message Template Auto Format enabled
+2020-09-17 22:05:51.7522 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-17 22:05:51.8084 Info Adding target FileTarget(Name=alldata)
+2020-09-17 22:05:51.8209 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-17 22:05:51.8415 Info Found 22 configuration items
+2020-09-17 22:05:51.8797 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-17 22:05:51.8870 Info Message Template Auto Format enabled
+2020-09-17 22:05:51.8870 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-17 22:05:51.9006 Info Adding target FileTarget(Name=alldata)
+2020-09-17 22:05:51.9006 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-17 22:05:51.9006 Info Closing old configuration.
+2020-09-17 22:05:51.9369 Info Found 22 configuration items
+2020-09-17 22:05:51.9448 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-17 22:05:51.9448 Info Message Template Auto Format enabled
+2020-09-17 22:05:51.9448 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-17 22:05:51.9630 Info Adding target FileTarget(Name=alldata)
+2020-09-17 22:05:51.9630 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-17 22:05:51.9630 Info Closing old configuration.
+2020-09-17 22:05:51.9793 Info Found 22 configuration items
+2020-09-17 22:05:56.3467 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-17 22:05:56.3514 Info Message Template Auto Format enabled
+2020-09-17 22:05:56.3514 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-17 22:05:56.3668 Info Adding target FileTarget(Name=alldata)
+2020-09-17 22:05:56.3668 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-17 22:05:56.3668 Info Closing old configuration.
+2020-09-17 22:05:56.3853 Info Found 22 configuration items
+2020-09-19 21:01:54.7974 Info Message Template Auto Format enabled
+2020-09-19 21:01:54.8114 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-19 21:01:54.8822 Info Adding target FileTarget(Name=alldata)
+2020-09-19 21:01:54.8974 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-19 21:01:54.9172 Info Found 22 configuration items
+2020-09-19 21:01:54.9586 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-19 21:01:54.9671 Info Message Template Auto Format enabled
+2020-09-19 21:01:54.9772 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-19 21:01:54.9772 Info Adding target FileTarget(Name=alldata)
+2020-09-19 21:01:54.9772 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-19 21:01:54.9931 Info Closing old configuration.
+2020-09-19 21:01:55.0175 Info Found 22 configuration items
+2020-09-19 21:03:24.9209 Info Message Template Auto Format enabled
+2020-09-19 21:03:24.9369 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-19 21:03:24.9896 Info Adding target FileTarget(Name=alldata)
+2020-09-19 21:03:25.0004 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-19 21:03:25.0183 Info Found 22 configuration items
+2020-09-19 21:03:25.0557 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-19 21:03:25.0557 Info Message Template Auto Format enabled
+2020-09-19 21:03:25.0557 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-19 21:03:25.0754 Info Adding target FileTarget(Name=alldata)
+2020-09-19 21:03:25.0936 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-19 21:03:25.1071 Info Closing old configuration.
+2020-09-19 21:03:25.1486 Info Found 22 configuration items
+2020-09-19 21:03:26.7031 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-19 21:03:26.7031 Info Message Template Auto Format enabled
+2020-09-19 21:03:26.7138 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-19 21:03:26.7138 Info Adding target FileTarget(Name=alldata)
+2020-09-19 21:03:26.7275 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-19 21:03:26.7275 Info Closing old configuration.
+2020-09-19 21:03:26.7275 Info Found 22 configuration items
+2020-09-19 21:04:11.0555 Info Message Template Auto Format enabled
+2020-09-19 21:04:11.0555 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-19 21:04:11.1393 Info Adding target FileTarget(Name=alldata)
+2020-09-19 21:04:11.1531 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-19 21:04:11.1832 Info Found 22 configuration items
+2020-09-19 21:04:11.2520 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-19 21:04:11.2639 Info Message Template Auto Format enabled
+2020-09-19 21:04:11.2639 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-19 21:04:11.2793 Info Adding target FileTarget(Name=alldata)
+2020-09-19 21:04:11.2793 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-19 21:04:11.2938 Info Closing old configuration.
+2020-09-19 21:04:11.3155 Info Found 22 configuration items
+2020-09-19 21:05:48.1157 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-19 21:05:48.1260 Info Message Template Auto Format enabled
+2020-09-19 21:05:48.1374 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-19 21:05:48.1581 Info Adding target FileTarget(Name=alldata)
+2020-09-19 21:05:48.1683 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-19 21:05:48.1788 Info Closing old configuration.
+2020-09-19 21:05:48.1788 Info Found 22 configuration items
+2020-09-19 21:06:27.5418 Info Message Template Auto Format enabled
+2020-09-19 21:06:27.5558 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-19 21:06:27.6060 Info Adding target FileTarget(Name=alldata)
+2020-09-19 21:06:27.6060 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-19 21:06:27.6370 Info Found 22 configuration items
+2020-09-19 21:06:27.6763 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-19 21:06:27.6815 Info Message Template Auto Format enabled
+2020-09-19 21:06:27.6815 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-19 21:06:27.6815 Info Adding target FileTarget(Name=alldata)
+2020-09-19 21:06:27.6970 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-19 21:06:27.6970 Info Closing old configuration.
+2020-09-19 21:06:27.7219 Info Found 22 configuration items
+2020-09-19 21:06:36.6957 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-19 21:06:36.6957 Info Message Template Auto Format enabled
+2020-09-19 21:06:36.6957 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-19 21:06:36.7154 Info Adding target FileTarget(Name=alldata)
+2020-09-19 21:06:36.7154 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-19 21:06:36.7255 Info Closing old configuration.
+2020-09-19 21:06:36.7255 Info Found 22 configuration items
+2020-09-19 21:29:27.5781 Info Message Template Auto Format enabled
+2020-09-19 21:29:27.5912 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-19 21:29:27.6405 Info Adding target FileTarget(Name=alldata)
+2020-09-19 21:29:27.6524 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-19 21:29:27.6738 Info Found 22 configuration items
+2020-09-19 21:29:27.7108 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-19 21:29:27.7108 Info Message Template Auto Format enabled
+2020-09-19 21:29:27.7108 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-19 21:29:27.7264 Info Adding target FileTarget(Name=alldata)
+2020-09-19 21:29:27.7264 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-19 21:29:27.7264 Info Closing old configuration.
+2020-09-19 21:29:27.7608 Info Found 22 configuration items
+2020-09-19 21:29:35.9644 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-19 21:29:35.9644 Info Message Template Auto Format enabled
+2020-09-19 21:29:35.9794 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-19 21:29:35.9794 Info Adding target FileTarget(Name=alldata)
+2020-09-19 21:29:35.9916 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-19 21:29:35.9916 Info Closing old configuration.
+2020-09-19 21:29:35.9916 Info Found 22 configuration items
+2020-09-19 21:37:20.1164 Info Message Template Auto Format enabled
+2020-09-19 21:37:20.1396 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-19 21:37:20.2135 Info Adding target FileTarget(Name=alldata)
+2020-09-19 21:37:20.2294 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-19 21:37:20.2565 Info Found 22 configuration items
+2020-09-19 21:37:20.3082 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-19 21:37:20.3082 Info Message Template Auto Format enabled
+2020-09-19 21:37:20.3201 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-19 21:37:20.3201 Info Adding target FileTarget(Name=alldata)
+2020-09-19 21:37:20.3201 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-19 21:37:20.3378 Info Closing old configuration.
+2020-09-19 21:37:20.3632 Info Found 22 configuration items
+2020-09-19 21:37:28.2028 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-19 21:37:28.2028 Info Message Template Auto Format enabled
+2020-09-19 21:37:28.2160 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-19 21:37:28.2160 Info Adding target FileTarget(Name=alldata)
+2020-09-19 21:37:28.2312 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-19 21:37:28.2312 Info Closing old configuration.
+2020-09-19 21:37:28.2452 Info Found 22 configuration items
+2020-09-19 22:09:01.0140 Info Message Template Auto Format enabled
+2020-09-19 22:09:01.0280 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-19 22:09:01.0754 Info Adding target FileTarget(Name=alldata)
+2020-09-19 22:09:01.0940 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-19 22:09:01.1232 Info Found 22 configuration items
+2020-09-19 22:09:01.1806 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-19 22:09:01.1806 Info Message Template Auto Format enabled
+2020-09-19 22:09:01.1981 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-19 22:09:01.2096 Info Adding target FileTarget(Name=alldata)
+2020-09-19 22:09:01.2096 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-19 22:09:01.2261 Info Closing old configuration.
+2020-09-19 22:09:01.2666 Info Found 22 configuration items
+2020-09-19 22:09:09.1727 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-19 22:09:09.1789 Info Message Template Auto Format enabled
+2020-09-19 22:09:09.1789 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-19 22:09:09.2012 Info Adding target FileTarget(Name=alldata)
+2020-09-19 22:09:09.2117 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-19 22:09:09.2117 Info Closing old configuration.
+2020-09-19 22:09:09.2309 Info Found 22 configuration items
+2020-09-20 22:43:17.6836 Info Message Template Auto Format enabled
+2020-09-20 22:43:17.6836 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-20 22:43:17.7450 Info Adding target FileTarget(Name=alldata)
+2020-09-20 22:43:17.7450 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-20 22:43:17.7749 Info Found 22 configuration items
+2020-09-20 22:43:17.8191 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-20 22:43:17.8261 Info Message Template Auto Format enabled
+2020-09-20 22:43:17.8261 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-20 22:43:17.8387 Info Adding target FileTarget(Name=alldata)
+2020-09-20 22:43:17.8387 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-20 22:43:17.8387 Info Closing old configuration.
+2020-09-20 22:43:17.8776 Info Found 22 configuration items
+2020-09-20 22:43:53.1038 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-20 22:43:53.1147 Info Message Template Auto Format enabled
+2020-09-20 22:43:53.1238 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-20 22:43:53.1351 Info Adding target FileTarget(Name=alldata)
+2020-09-20 22:43:53.1351 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-20 22:43:53.1526 Info Closing old configuration.
+2020-09-20 22:43:53.1526 Info Found 22 configuration items
+2020-09-20 22:48:15.6765 Info Message Template Auto Format enabled
+2020-09-20 22:48:15.6914 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-20 22:48:15.7524 Info Adding target FileTarget(Name=alldata)
+2020-09-20 22:48:15.7652 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-20 22:48:15.7897 Info Found 22 configuration items
+2020-09-20 22:48:15.8355 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-20 22:48:15.8408 Info Message Template Auto Format enabled
+2020-09-20 22:48:15.8408 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-20 22:48:15.8408 Info Adding target FileTarget(Name=alldata)
+2020-09-20 22:48:15.8580 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-20 22:48:15.8580 Info Closing old configuration.
+2020-09-20 22:48:15.8939 Info Found 22 configuration items
+2020-09-20 22:48:26.6393 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-20 22:48:26.6393 Info Message Template Auto Format enabled
+2020-09-20 22:48:26.6523 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-20 22:48:26.6523 Info Adding target FileTarget(Name=alldata)
+2020-09-20 22:48:26.6685 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-20 22:48:26.6685 Info Closing old configuration.
+2020-09-20 22:48:26.6685 Info Found 22 configuration items
+2020-09-20 22:50:32.9957 Info Message Template Auto Format enabled
+2020-09-20 22:50:32.9957 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-20 22:50:33.0881 Info Adding target FileTarget(Name=alldata)
+2020-09-20 22:50:33.1424 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-20 22:50:33.1713 Info Found 22 configuration items
+2020-09-20 22:50:33.2391 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-20 22:50:33.2479 Info Message Template Auto Format enabled
+2020-09-20 22:50:33.2479 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-20 22:50:33.2640 Info Adding target FileTarget(Name=alldata)
+2020-09-20 22:50:33.2640 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-20 22:50:33.2767 Info Closing old configuration.
+2020-09-20 22:50:33.3017 Info Found 22 configuration items
+2020-09-20 22:51:21.2875 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-20 22:51:21.2926 Info Message Template Auto Format enabled
+2020-09-20 22:51:21.2926 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-20 22:51:21.2926 Info Adding target FileTarget(Name=alldata)
+2020-09-20 22:51:21.3130 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-20 22:51:21.3130 Info Closing old configuration.
+2020-09-20 22:51:21.3285 Info Found 22 configuration items
+2020-09-20 22:54:53.7788 Info Message Template Auto Format enabled
+2020-09-20 22:54:53.7934 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-20 22:54:53.8445 Info Adding target FileTarget(Name=alldata)
+2020-09-20 22:54:53.8578 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-20 22:54:53.8795 Info Found 22 configuration items
+2020-09-20 22:54:53.9187 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-20 22:54:53.9187 Info Message Template Auto Format enabled
+2020-09-20 22:54:53.9187 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-20 22:54:53.9354 Info Adding target FileTarget(Name=alldata)
+2020-09-20 22:54:53.9354 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-20 22:54:53.9354 Info Closing old configuration.
+2020-09-20 22:54:53.9666 Info Found 22 configuration items
+2020-09-20 22:54:58.4078 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-20 22:54:58.4078 Info Message Template Auto Format enabled
+2020-09-20 22:54:58.4241 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-20 22:54:58.4337 Info Adding target FileTarget(Name=alldata)
+2020-09-20 22:54:58.4337 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-20 22:54:58.4337 Info Closing old configuration.
+2020-09-20 22:54:58.4524 Info Found 22 configuration items
+2020-09-20 23:16:07.3470 Info Message Template Auto Format enabled
+2020-09-20 23:16:07.3599 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-20 23:16:07.4702 Info Adding target FileTarget(Name=alldata)
+2020-09-20 23:16:07.4792 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-20 23:16:07.4962 Info Found 22 configuration items
+2020-09-20 23:16:07.5817 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-20 23:16:07.5817 Info Message Template Auto Format enabled
+2020-09-20 23:16:07.5922 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-20 23:16:07.5922 Info Adding target FileTarget(Name=alldata)
+2020-09-20 23:16:07.6056 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-20 23:16:07.6056 Info Closing old configuration.
+2020-09-20 23:16:07.6469 Info Found 22 configuration items
+2020-09-20 23:16:07.6550 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-20 23:16:07.6550 Info Message Template Auto Format enabled
+2020-09-20 23:16:07.6675 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-20 23:16:07.6675 Info Adding target FileTarget(Name=alldata)
+2020-09-20 23:16:07.6675 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-20 23:16:07.6896 Info Closing old configuration.
+2020-09-20 23:16:07.6896 Info Found 22 configuration items
+2020-09-20 23:17:18.4872 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-20 23:17:18.4872 Info Message Template Auto Format enabled
+2020-09-20 23:17:18.4990 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-20 23:17:18.4990 Info Adding target FileTarget(Name=alldata)
+2020-09-20 23:17:18.5147 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-20 23:17:18.5147 Info Closing old configuration.
+2020-09-20 23:17:18.5269 Info Found 22 configuration items
+2020-09-20 23:21:47.9335 Info Message Template Auto Format enabled
+2020-09-20 23:21:47.9485 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-20 23:21:47.9934 Info Adding target FileTarget(Name=alldata)
+2020-09-20 23:21:48.0085 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-20 23:21:48.0323 Info Found 22 configuration items
+2020-09-20 23:21:48.1020 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-20 23:21:48.1128 Info Message Template Auto Format enabled
+2020-09-20 23:21:48.1236 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-20 23:21:48.1236 Info Adding target FileTarget(Name=alldata)
+2020-09-20 23:21:48.1467 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-20 23:21:48.1592 Info Closing old configuration.
+2020-09-20 23:21:48.2024 Info Found 22 configuration items
+2020-09-20 23:21:48.2024 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-20 23:21:48.2166 Info Message Template Auto Format enabled
+2020-09-20 23:21:48.2166 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-20 23:21:48.2307 Info Adding target FileTarget(Name=alldata)
+2020-09-20 23:21:48.2307 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-20 23:21:48.2307 Info Closing old configuration.
+2020-09-20 23:21:48.2486 Info Found 22 configuration items
+2020-09-20 23:22:15.5821 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-20 23:22:15.5821 Info Message Template Auto Format enabled
+2020-09-20 23:22:15.5929 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-20 23:22:15.6055 Info Adding target FileTarget(Name=alldata)
+2020-09-20 23:22:15.6055 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-20 23:22:15.6055 Info Closing old configuration.
+2020-09-20 23:22:15.6223 Info Found 22 configuration items
+2020-09-20 23:34:11.0202 Info Message Template Auto Format enabled
+2020-09-20 23:34:11.0421 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-20 23:34:11.1165 Info Adding target FileTarget(Name=alldata)
+2020-09-20 23:34:11.1296 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-20 23:34:11.1576 Info Found 22 configuration items
+2020-09-20 23:34:11.1995 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-20 23:34:11.1995 Info Message Template Auto Format enabled
+2020-09-20 23:34:11.1995 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-20 23:34:11.2188 Info Adding target FileTarget(Name=alldata)
+2020-09-20 23:34:11.2188 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-20 23:34:11.2299 Info Closing old configuration.
+2020-09-20 23:34:11.2582 Info Found 22 configuration items
+2020-09-20 23:34:11.2649 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-20 23:34:11.2649 Info Message Template Auto Format enabled
+2020-09-20 23:34:11.2794 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-20 23:34:11.2794 Info Adding target FileTarget(Name=alldata)
+2020-09-20 23:34:11.2916 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-20 23:34:11.2916 Info Closing old configuration.
+2020-09-20 23:34:11.2916 Info Found 22 configuration items
+2020-09-20 23:34:18.1781 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-20 23:34:18.1874 Info Message Template Auto Format enabled
+2020-09-20 23:34:18.1874 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-20 23:34:18.2091 Info Adding target FileTarget(Name=alldata)
+2020-09-20 23:34:18.2151 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-20 23:34:18.2151 Info Closing old configuration.
+2020-09-20 23:34:18.2151 Info Found 22 configuration items
+2020-09-20 23:43:32.5900 Info Message Template Auto Format enabled
+2020-09-20 23:43:32.6147 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-20 23:43:32.6616 Info Adding target FileTarget(Name=alldata)
+2020-09-20 23:43:32.6728 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-20 23:43:32.6917 Info Found 22 configuration items
+2020-09-20 23:43:32.7323 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-20 23:43:32.7323 Info Message Template Auto Format enabled
+2020-09-20 23:43:32.7457 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-20 23:43:32.7457 Info Adding target FileTarget(Name=alldata)
+2020-09-20 23:43:32.7602 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-20 23:43:32.7602 Info Closing old configuration.
+2020-09-20 23:43:32.7874 Info Found 22 configuration items
+2020-09-20 23:45:34.6610 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-20 23:45:34.6610 Info Message Template Auto Format enabled
+2020-09-20 23:45:34.6751 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-20 23:45:34.6862 Info Adding target FileTarget(Name=alldata)
+2020-09-20 23:45:34.6862 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-20 23:45:34.6990 Info Closing old configuration.
+2020-09-20 23:45:34.7595 Info Found 22 configuration items
+2020-09-20 23:50:41.0160 Info Message Template Auto Format enabled
+2020-09-20 23:50:41.0312 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-20 23:50:41.1496 Info Adding target FileTarget(Name=alldata)
+2020-09-20 23:50:41.1646 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-20 23:50:41.1919 Info Found 22 configuration items
+2020-09-20 23:50:41.2527 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-20 23:50:41.2527 Info Message Template Auto Format enabled
+2020-09-20 23:50:41.2674 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-20 23:50:41.2674 Info Adding target FileTarget(Name=alldata)
+2020-09-20 23:50:41.2836 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-20 23:50:41.2836 Info Closing old configuration.
+2020-09-20 23:50:41.3136 Info Found 22 configuration items
+2020-09-20 23:54:05.2380 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-20 23:54:05.2485 Info Message Template Auto Format enabled
+2020-09-20 23:54:05.2707 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-20 23:54:05.3107 Info Adding target FileTarget(Name=alldata)
+2020-09-20 23:54:05.3107 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-20 23:54:05.3434 Info Closing old configuration.
+2020-09-20 23:54:05.3792 Info Found 22 configuration items
+2020-09-21 01:15:58.9342 Info Message Template Auto Format enabled
+2020-09-21 01:15:58.9503 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 01:15:59.0233 Info Adding target FileTarget(Name=alldata)
+2020-09-21 01:15:59.0402 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 01:15:59.0706 Info Found 22 configuration items
+2020-09-21 01:15:59.1876 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 01:15:59.1876 Info Message Template Auto Format enabled
+2020-09-21 01:15:59.2038 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 01:15:59.2135 Info Adding target FileTarget(Name=alldata)
+2020-09-21 01:15:59.2135 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 01:15:59.2289 Info Closing old configuration.
+2020-09-21 01:15:59.2670 Info Found 22 configuration items
+2020-09-21 01:15:59.2769 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 01:15:59.2769 Info Message Template Auto Format enabled
+2020-09-21 01:15:59.2927 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 01:15:59.2927 Info Adding target FileTarget(Name=alldata)
+2020-09-21 01:15:59.2927 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 01:15:59.3119 Info Closing old configuration.
+2020-09-21 01:15:59.3119 Info Found 22 configuration items
+2020-09-21 01:21:00.5307 Info Message Template Auto Format enabled
+2020-09-21 01:21:00.5421 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 01:21:00.5906 Info Adding target FileTarget(Name=alldata)
+2020-09-21 01:21:00.5906 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 01:21:00.6233 Info Found 22 configuration items
+2020-09-21 01:21:00.6651 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 01:21:00.6704 Info Message Template Auto Format enabled
+2020-09-21 01:21:00.6704 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 01:21:00.6704 Info Adding target FileTarget(Name=alldata)
+2020-09-21 01:21:00.6865 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 01:21:00.6865 Info Closing old configuration.
+2020-09-21 01:21:00.7215 Info Found 22 configuration items
+2020-09-21 01:21:00.7295 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 01:21:00.7295 Info Message Template Auto Format enabled
+2020-09-21 01:21:00.7295 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 01:21:00.7461 Info Adding target FileTarget(Name=alldata)
+2020-09-21 01:21:00.7461 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 01:21:00.7461 Info Closing old configuration.
+2020-09-21 01:21:00.7614 Info Found 22 configuration items
+2020-09-21 01:24:19.3729 Info Message Template Auto Format enabled
+2020-09-21 01:24:19.3887 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 01:24:19.4399 Info Adding target FileTarget(Name=alldata)
+2020-09-21 01:24:19.4513 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 01:24:19.4699 Info Found 22 configuration items
+2020-09-21 01:24:19.5272 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 01:24:19.5272 Info Message Template Auto Format enabled
+2020-09-21 01:24:19.5272 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 01:24:19.5432 Info Adding target FileTarget(Name=alldata)
+2020-09-21 01:24:19.5432 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 01:24:19.5575 Info Closing old configuration.
+2020-09-21 01:24:19.5778 Info Found 22 configuration items
+2020-09-21 01:24:19.5778 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 01:24:19.5892 Info Message Template Auto Format enabled
+2020-09-21 01:24:19.5892 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 01:24:19.5892 Info Adding target FileTarget(Name=alldata)
+2020-09-21 01:24:19.6065 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 01:24:19.6065 Info Closing old configuration.
+2020-09-21 01:24:19.6065 Info Found 22 configuration items
+2020-09-21 01:26:23.9686 Info Message Template Auto Format enabled
+2020-09-21 01:26:23.9836 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 01:26:24.0748 Info Adding target FileTarget(Name=alldata)
+2020-09-21 01:26:24.0936 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 01:26:24.1281 Info Found 22 configuration items
+2020-09-21 01:26:24.2030 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 01:26:24.2143 Info Message Template Auto Format enabled
+2020-09-21 01:26:24.2143 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 01:26:24.2329 Info Adding target FileTarget(Name=alldata)
+2020-09-21 01:26:24.2329 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 01:26:24.2468 Info Closing old configuration.
+2020-09-21 01:26:24.2728 Info Found 22 configuration items
+2020-09-21 01:26:24.2824 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 01:26:24.2824 Info Message Template Auto Format enabled
+2020-09-21 01:26:24.2984 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 01:26:24.2984 Info Adding target FileTarget(Name=alldata)
+2020-09-21 01:26:24.3100 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 01:26:24.3100 Info Closing old configuration.
+2020-09-21 01:26:24.3100 Info Found 22 configuration items
+2020-09-21 01:27:54.4646 Info Message Template Auto Format enabled
+2020-09-21 01:27:54.4646 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 01:27:54.5341 Info Adding target FileTarget(Name=alldata)
+2020-09-21 01:27:54.5455 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 01:27:54.5662 Info Found 22 configuration items
+2020-09-21 01:27:54.6029 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 01:27:54.6095 Info Message Template Auto Format enabled
+2020-09-21 01:27:54.6095 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 01:27:54.6211 Info Adding target FileTarget(Name=alldata)
+2020-09-21 01:27:54.6211 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 01:27:54.6211 Info Closing old configuration.
+2020-09-21 01:27:54.6609 Info Found 22 configuration items
+2020-09-21 01:27:54.6695 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 01:27:54.6695 Info Message Template Auto Format enabled
+2020-09-21 01:27:54.6837 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 01:27:54.6837 Info Adding target FileTarget(Name=alldata)
+2020-09-21 01:27:54.6975 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 01:27:54.6975 Info Closing old configuration.
+2020-09-21 01:27:54.7141 Info Found 22 configuration items
+2020-09-21 01:41:27.7104 Info Message Template Auto Format enabled
+2020-09-21 01:41:27.7241 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 01:41:27.7740 Info Adding target FileTarget(Name=alldata)
+2020-09-21 01:41:27.7925 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 01:41:27.8142 Info Found 22 configuration items
+2020-09-21 01:41:27.8479 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 01:41:27.8479 Info Message Template Auto Format enabled
+2020-09-21 01:41:27.8589 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 01:41:27.8589 Info Adding target FileTarget(Name=alldata)
+2020-09-21 01:41:27.8719 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 01:41:27.8719 Info Closing old configuration.
+2020-09-21 01:41:27.8978 Info Found 22 configuration items
+2020-09-21 01:41:27.9037 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 01:41:27.9037 Info Message Template Auto Format enabled
+2020-09-21 01:41:27.9037 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 01:41:27.9172 Info Adding target FileTarget(Name=alldata)
+2020-09-21 01:41:27.9172 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 01:41:27.9172 Info Closing old configuration.
+2020-09-21 01:41:27.9172 Info Found 22 configuration items
+2020-09-21 01:45:45.6120 Info Message Template Auto Format enabled
+2020-09-21 01:45:45.6246 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 01:45:45.6712 Info Adding target FileTarget(Name=alldata)
+2020-09-21 01:45:45.6831 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 01:45:45.7017 Info Found 22 configuration items
+2020-09-21 01:45:45.7509 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 01:45:45.7509 Info Message Template Auto Format enabled
+2020-09-21 01:45:45.7668 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 01:45:45.7760 Info Adding target FileTarget(Name=alldata)
+2020-09-21 01:45:45.7760 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 01:45:45.7760 Info Closing old configuration.
+2020-09-21 01:45:45.8188 Info Found 22 configuration items
+2020-09-21 01:45:45.8269 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 01:45:45.8269 Info Message Template Auto Format enabled
+2020-09-21 01:45:45.8386 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 01:45:45.8386 Info Adding target FileTarget(Name=alldata)
+2020-09-21 01:45:45.8386 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 01:45:45.8570 Info Closing old configuration.
+2020-09-21 01:45:45.8570 Info Found 22 configuration items
+2020-09-21 01:46:08.5454 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 01:46:08.5454 Info Message Template Auto Format enabled
+2020-09-21 01:46:08.5582 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 01:46:08.5582 Info Adding target FileTarget(Name=alldata)
+2020-09-21 01:46:08.5582 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 01:46:08.5776 Info Closing old configuration.
+2020-09-21 01:46:08.7051 Info Found 22 configuration items
+2020-09-21 01:47:50.2652 Info Message Template Auto Format enabled
+2020-09-21 01:47:50.2818 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 01:47:50.3336 Info Adding target FileTarget(Name=alldata)
+2020-09-21 01:47:50.3465 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 01:47:50.3675 Info Found 22 configuration items
+2020-09-21 01:47:50.4192 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 01:47:50.4192 Info Message Template Auto Format enabled
+2020-09-21 01:47:50.4192 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 01:47:50.4385 Info Adding target FileTarget(Name=alldata)
+2020-09-21 01:47:50.4385 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 01:47:50.4556 Info Closing old configuration.
+2020-09-21 01:47:50.4797 Info Found 22 configuration items
+2020-09-21 01:47:50.4797 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 01:47:50.4797 Info Message Template Auto Format enabled
+2020-09-21 01:47:50.4985 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 01:47:50.4985 Info Adding target FileTarget(Name=alldata)
+2020-09-21 01:47:50.5126 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 01:47:50.5126 Info Closing old configuration.
+2020-09-21 01:47:50.5263 Info Found 22 configuration items
+2020-09-21 01:50:23.2456 Info Message Template Auto Format enabled
+2020-09-21 01:50:23.2456 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 01:50:23.3169 Info Adding target FileTarget(Name=alldata)
+2020-09-21 01:50:23.3294 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 01:50:23.3489 Info Found 22 configuration items
+2020-09-21 01:50:23.3836 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 01:50:23.3895 Info Message Template Auto Format enabled
+2020-09-21 01:50:23.3895 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 01:50:23.4005 Info Adding target FileTarget(Name=alldata)
+2020-09-21 01:50:23.4005 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 01:50:23.4005 Info Closing old configuration.
+2020-09-21 01:50:23.4299 Info Found 22 configuration items
+2020-09-21 01:50:23.4363 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 01:50:23.4363 Info Message Template Auto Format enabled
+2020-09-21 01:50:23.4363 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 01:50:23.4527 Info Adding target FileTarget(Name=alldata)
+2020-09-21 01:50:23.4527 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 01:50:23.4645 Info Closing old configuration.
+2020-09-21 01:50:23.4645 Info Found 22 configuration items
+2020-09-21 02:19:26.8108 Info Message Template Auto Format enabled
+2020-09-21 02:19:26.8245 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 02:19:26.8759 Info Adding target FileTarget(Name=alldata)
+2020-09-21 02:19:26.8888 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 02:19:26.9135 Info Found 22 configuration items
+2020-09-21 02:19:26.9511 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 02:19:26.9511 Info Message Template Auto Format enabled
+2020-09-21 02:19:26.9511 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 02:19:26.9678 Info Adding target FileTarget(Name=alldata)
+2020-09-21 02:19:26.9678 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 02:19:26.9802 Info Closing old configuration.
+2020-09-21 02:19:27.0182 Info Found 22 configuration items
+2020-09-21 02:19:27.0320 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 02:19:27.0427 Info Message Template Auto Format enabled
+2020-09-21 02:19:27.0427 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 02:19:27.0663 Info Adding target FileTarget(Name=alldata)
+2020-09-21 02:19:27.0783 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 02:19:27.0881 Info Closing old configuration.
+2020-09-21 02:19:27.0881 Info Found 22 configuration items
+2020-09-21 02:19:59.5089 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 02:19:59.5158 Info Message Template Auto Format enabled
+2020-09-21 02:19:59.5158 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 02:19:59.5376 Info Adding target FileTarget(Name=alldata)
+2020-09-21 02:19:59.5452 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 02:19:59.5452 Info Closing old configuration.
+2020-09-21 02:19:59.5668 Info Found 22 configuration items
+2020-09-21 02:22:18.1235 Info Message Template Auto Format enabled
+2020-09-21 02:22:18.1555 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 02:22:18.2339 Info Adding target FileTarget(Name=alldata)
+2020-09-21 02:22:18.2497 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 02:22:18.2741 Info Found 22 configuration items
+2020-09-21 02:22:18.3206 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 02:22:18.3263 Info Message Template Auto Format enabled
+2020-09-21 02:22:18.3263 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 02:22:18.3263 Info Adding target FileTarget(Name=alldata)
+2020-09-21 02:22:18.3439 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 02:22:18.3439 Info Closing old configuration.
+2020-09-21 02:22:18.3768 Info Found 22 configuration items
+2020-09-21 02:22:18.3768 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 02:22:18.3894 Info Message Template Auto Format enabled
+2020-09-21 02:22:18.3894 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 02:22:18.4021 Info Adding target FileTarget(Name=alldata)
+2020-09-21 02:22:18.4021 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 02:22:18.4021 Info Closing old configuration.
+2020-09-21 02:22:18.4226 Info Found 22 configuration items
+2020-09-21 02:22:19.5817 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 02:22:19.5817 Info Message Template Auto Format enabled
+2020-09-21 02:22:19.5928 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 02:22:19.5928 Info Adding target FileTarget(Name=alldata)
+2020-09-21 02:22:19.6051 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 02:22:19.6051 Info Closing old configuration.
+2020-09-21 02:22:19.6051 Info Found 22 configuration items
+2020-09-21 02:24:23.6775 Info Message Template Auto Format enabled
+2020-09-21 02:24:23.6924 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 02:24:23.7429 Info Adding target FileTarget(Name=alldata)
+2020-09-21 02:24:23.7549 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 02:24:23.7768 Info Found 22 configuration items
+2020-09-21 02:24:23.8321 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 02:24:23.8321 Info Message Template Auto Format enabled
+2020-09-21 02:24:23.8449 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 02:24:23.8449 Info Adding target FileTarget(Name=alldata)
+2020-09-21 02:24:23.8559 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 02:24:23.8559 Info Closing old configuration.
+2020-09-21 02:24:23.8857 Info Found 22 configuration items
+2020-09-21 02:24:23.8857 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 02:24:23.9021 Info Message Template Auto Format enabled
+2020-09-21 02:24:23.9021 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 02:24:23.9174 Info Adding target FileTarget(Name=alldata)
+2020-09-21 02:24:23.9174 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 02:24:23.9174 Info Closing old configuration.
+2020-09-21 02:24:23.9365 Info Found 22 configuration items
+2020-09-21 02:24:25.1934 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 02:24:25.1994 Info Message Template Auto Format enabled
+2020-09-21 02:24:25.1994 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 02:24:25.2156 Info Adding target FileTarget(Name=alldata)
+2020-09-21 02:24:25.2156 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 02:24:25.2284 Info Closing old configuration.
+2020-09-21 02:24:25.2284 Info Found 22 configuration items
+2020-09-21 02:26:13.3653 Info Message Template Auto Format enabled
+2020-09-21 02:26:13.3777 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 02:26:13.4281 Info Adding target FileTarget(Name=alldata)
+2020-09-21 02:26:13.4415 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 02:26:13.4598 Info Found 22 configuration items
+2020-09-21 02:26:13.4941 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 02:26:13.4941 Info Message Template Auto Format enabled
+2020-09-21 02:26:13.4941 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 02:26:13.5118 Info Adding target FileTarget(Name=alldata)
+2020-09-21 02:26:13.5118 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 02:26:13.5118 Info Closing old configuration.
+2020-09-21 02:26:13.5439 Info Found 22 configuration items
+2020-09-21 02:26:13.5439 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 02:26:13.5582 Info Message Template Auto Format enabled
+2020-09-21 02:26:13.5582 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 02:26:13.5582 Info Adding target FileTarget(Name=alldata)
+2020-09-21 02:26:13.5765 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 02:26:13.5765 Info Closing old configuration.
+2020-09-21 02:26:13.5905 Info Found 22 configuration items
+2020-09-21 02:26:18.7389 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 02:26:18.7453 Info Message Template Auto Format enabled
+2020-09-21 02:26:18.7453 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 02:26:18.7673 Info Adding target FileTarget(Name=alldata)
+2020-09-21 02:26:18.7673 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 02:26:18.7810 Info Closing old configuration.
+2020-09-21 02:26:18.7924 Info Found 22 configuration items
+2020-09-21 02:29:16.0916 Info Message Template Auto Format enabled
+2020-09-21 02:29:16.1176 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 02:29:16.1921 Info Adding target FileTarget(Name=alldata)
+2020-09-21 02:29:16.2043 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 02:29:16.2262 Info Found 22 configuration items
+2020-09-21 02:29:16.2700 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 02:29:16.2771 Info Message Template Auto Format enabled
+2020-09-21 02:29:16.2771 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 02:29:16.2771 Info Adding target FileTarget(Name=alldata)
+2020-09-21 02:29:16.2980 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 02:29:16.2980 Info Closing old configuration.
+2020-09-21 02:29:16.3308 Info Found 22 configuration items
+2020-09-21 02:29:16.3392 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 02:29:16.3392 Info Message Template Auto Format enabled
+2020-09-21 02:29:16.3555 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 02:29:16.3555 Info Adding target FileTarget(Name=alldata)
+2020-09-21 02:29:16.3709 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 02:29:16.3709 Info Closing old configuration.
+2020-09-21 02:29:16.3889 Info Found 22 configuration items
+2020-09-21 02:29:17.5030 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 02:29:17.5102 Info Message Template Auto Format enabled
+2020-09-21 02:29:17.5102 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 02:29:17.5305 Info Adding target FileTarget(Name=alldata)
+2020-09-21 02:29:17.5305 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 02:29:17.5432 Info Closing old configuration.
+2020-09-21 02:29:17.5621 Info Found 22 configuration items
+2020-09-21 02:35:26.1533 Info Message Template Auto Format enabled
+2020-09-21 02:35:26.1674 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 02:35:26.2175 Info Adding target FileTarget(Name=alldata)
+2020-09-21 02:35:26.2175 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 02:35:26.2499 Info Found 22 configuration items
+2020-09-21 02:35:26.2842 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 02:35:26.2931 Info Message Template Auto Format enabled
+2020-09-21 02:35:26.2931 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 02:35:26.3087 Info Adding target FileTarget(Name=alldata)
+2020-09-21 02:35:26.3087 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 02:35:26.3241 Info Closing old configuration.
+2020-09-21 02:35:26.3437 Info Found 22 configuration items
+2020-09-21 02:35:26.3437 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 02:35:26.3556 Info Message Template Auto Format enabled
+2020-09-21 02:35:26.3556 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 02:35:26.3556 Info Adding target FileTarget(Name=alldata)
+2020-09-21 02:35:26.3724 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 02:35:26.3724 Info Closing old configuration.
+2020-09-21 02:35:26.3854 Info Found 22 configuration items
+2020-09-21 02:35:27.5374 Info Configuring from an XML element in C:\Users\Gonzalo\Dropbox\GitHubProjects\stock-dashboard\StockDashboard\StockDashboard\bin\Release\netcoreapp3.1\nlog.config...
+2020-09-21 02:35:27.5426 Info Message Template Auto Format enabled
+2020-09-21 02:35:27.5426 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-21 02:35:27.5591 Info Adding target FileTarget(Name=alldata)
+2020-09-21 02:35:27.5591 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'otherFile-web' not found for logging rule: *.
+2020-09-21 02:35:27.5591 Info Closing old configuration.
+2020-09-21 02:35:27.5752 Info Found 22 configuration items
